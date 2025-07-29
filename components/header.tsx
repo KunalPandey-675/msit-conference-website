@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, X, Calendar, MapPin, Users, FileText, Award, Phone } from "lucide-react"
+import { Menu, Calendar, MapPin, Users, FileText, Award, Phone } from "lucide-react"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -88,14 +88,6 @@ export function Header() {
                     <p className="text-sm text-blue-600">Nov 13-14, 2025</p>
                   </div>
                 </div>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-blue-700 hover:text-blue-900"
-                >
-                  <X className="h-6 w-6" />
-                </Button>
               </div>
 
               <nav className="space-y-2">
