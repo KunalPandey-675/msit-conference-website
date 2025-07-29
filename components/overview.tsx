@@ -1,0 +1,135 @@
+"use client"
+
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Target, Lightbulb, Users, Globe, Zap, BookOpen } from "lucide-react"
+
+export function Overview() {
+  const objectives = [
+    {
+      icon: <Target className="w-6 h-6 sm:w-8 sm:h-8" />,
+      title: "Innovation Focus",
+      description: "Promote cutting-edge research and innovation in engineering and technology domains",
+    },
+    {
+      icon: <Users className="w-6 h-6 sm:w-8 sm:h-8" />,
+      title: "Industry Collaboration",
+      description: "Foster collaboration between academia and industry for practical solutions",
+    },
+    {
+      icon: <Globe className="w-6 h-6 sm:w-8 sm:h-8" />,
+      title: "Knowledge Exchange",
+      description: "Facilitate knowledge sharing among researchers, academicians, and professionals",
+    },
+    {
+      icon: <Zap className="w-6 h-6 sm:w-8 sm:h-8" />,
+      title: "Technology Transfer",
+      description: "Bridge the gap between research outcomes and industrial applications",
+    },
+  ]
+
+  const highlights = [
+    "Keynote speeches by renowned industry experts",
+    "Technical paper presentations across multiple tracks",
+    "Panel discussions on emerging technologies",
+    "Networking opportunities with industry leaders",
+    "Publication in IEEE proceedings",
+    "Awards for best papers and presentations",
+  ]
+
+  return (
+    <section id="overview" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-white to-blue-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4 sm:mb-6 text-xs sm:text-sm px-3 py-1">
+            Conference Overview
+          </Badge>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 sm:mb-6">
+            About NCI-TIDE-MSIT 2025
+          </h2>
+          <p className="text-base sm:text-lg lg:text-xl text-blue-700 max-w-4xl mx-auto leading-relaxed px-4">
+            The National Conference on Innovation in Technology and Industrial Development in Engineering (NCI-TIDE-MSIT
+            2025) is a premier platform for researchers, academicians, and industry professionals to showcase their
+            latest innovations and discuss emerging trends in engineering and technology.
+          </p>
+        </div>
+
+        {/* Conference Objectives */}
+        <div className="mb-12 sm:mb-16 lg:mb-20">
+          <h3 className="text-2xl sm:text-3xl font-bold text-blue-900 text-center mb-8 sm:mb-12">
+            Conference Objectives
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            {objectives.map((objective, index) => (
+              <Card
+                key={index}
+                className="bg-white border-blue-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 h-full"
+              >
+                <CardContent className="p-4 sm:p-6 text-center h-full flex flex-col">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 text-blue-600">
+                    {objective.icon}
+                  </div>
+                  <h4 className="text-lg sm:text-xl font-semibold text-blue-900 mb-3 sm:mb-4">{objective.title}</h4>
+                  <p className="text-sm sm:text-base text-blue-700 leading-relaxed flex-1">{objective.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Conference Highlights */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16">
+          <Card className="bg-white border-blue-200 shadow-lg">
+            <CardHeader className="pb-4 sm:pb-6">
+              <CardTitle className="text-2xl sm:text-3xl text-blue-900 flex items-center gap-3">
+                <div className="p-2 sm:p-3 bg-blue-100 rounded-lg">
+                  <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600" />
+                </div>
+                Conference Highlights
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-3 sm:space-y-4">
+              {highlights.map((highlight, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 sm:mt-3 flex-shrink-0"></div>
+                  <p className="text-sm sm:text-base text-blue-700 leading-relaxed">{highlight}</p>
+                </div>
+              ))}
+            </CardContent>
+          </Card>
+
+          <Card className="bg-gradient-to-br from-blue-900 to-purple-900 text-white">
+            <CardContent className="p-6 sm:p-8 lg:p-12">
+              <div className="flex items-center gap-3 mb-4 sm:mb-6">
+                <div className="p-2 sm:p-3 bg-white/20 rounded-lg">
+                  <BookOpen className="w-6 h-6 sm:w-8 sm:h-8" />
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold">Why Attend?</h3>
+              </div>
+              <div className="space-y-4 sm:space-y-6">
+                <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
+                  <h4 className="font-semibold text-base sm:text-lg mb-2">Research Excellence</h4>
+                  <p className="text-xs sm:text-sm text-blue-100">
+                    Present your research to a distinguished audience and receive valuable feedback
+                  </p>
+                </div>
+                <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
+                  <h4 className="font-semibold text-base sm:text-lg mb-2">Networking</h4>
+                  <p className="text-xs sm:text-sm text-blue-100">
+                    Connect with leading researchers and industry professionals
+                  </p>
+                </div>
+                <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
+                  <h4 className="font-semibold text-base sm:text-lg mb-2">Publication</h4>
+                  <p className="text-xs sm:text-sm text-blue-100">
+                    Get your work published in prestigious IEEE proceedings
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
+  )
+}
