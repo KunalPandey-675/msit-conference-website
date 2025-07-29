@@ -50,7 +50,6 @@ export function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo and Title */}
           <div className="flex items-center space-x-3 sm:space-x-4">
-            <img src="/placeholder-logo.svg" alt="MSIT Logo" className="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12" />
             <div className="flex flex-col">
               <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-blue-900 leading-tight">
                 NCI-TIDE-MSIT 2025
@@ -84,7 +83,6 @@ export function Header() {
             <SheetContent side="right" className="w-80 bg-white">
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center space-x-3">
-                  <img src="/placeholder-logo.svg" alt="MSIT Logo" className="h-8 w-8" />
                   <div>
                     <h2 className="text-lg font-bold text-blue-900">NCI-TIDE-MSIT 2025</h2>
                     <p className="text-sm text-blue-600">Nov 13-14, 2025</p>
