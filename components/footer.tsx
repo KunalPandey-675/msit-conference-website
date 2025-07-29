@@ -55,7 +55,6 @@ export function Footer() {
             {/* Conference Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-3 mb-4 sm:mb-6">
-                <img src="/placeholder-logo.svg" alt="MSIT Logo" className="h-10 w-10 sm:h-12 sm:w-12" />
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold">NCI-TIDE-MSIT 2025</h3>
                   <p className="text-sm sm:text-base text-blue-200">Nov 13-14, 2025</p>
