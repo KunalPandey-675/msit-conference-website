@@ -28,49 +28,43 @@ export function ImportantDates() {
 
   const dates = [
     {
-      date: "September 15, 2025",
+      date: "August 1, 2025",
       event: "Call for Papers Announcement",
       description: "Official announcement and paper submission portal opens",
       status: "completed",
       icon: <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
     {
-      date: "October 15, 2025",
+      date: "September 15, 2025",
       event: "Paper Submission Deadline",
       description: "Last date for submitting full papers",
       status: "upcoming",
       icon: <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
     {
-      date: "October 30, 2025",
+      date: "September 30, 2025",
       event: "Review Process Completion",
       description: "Peer review process completed and results announced",
       status: "upcoming",
       icon: <Clock className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
     {
-      date: "November 5, 2025",
+      date: "October 15, 2025",
       event: "Camera Ready Submission",
       description: "Final version of accepted papers due",
       status: "upcoming",
       icon: <Calendar className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
+    
     {
-      date: "November 8, 2025",
-      event: "Early Bird Registration Ends",
-      description: "Last date for discounted registration fees",
-      status: "upcoming",
-      icon: <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
-    },
-    {
-      date: "November 10, 2025",
+      date: "October 25, 2025",
       event: "Final Registration Deadline",
       description: "Last date for conference registration",
       status: "upcoming",
       icon: <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
     {
-      date: "November 13-14, 2025",
+      date: "November 20-21, 2025",
       event: "Conference Days",
       description: "Main conference event at MSIT, Delhi",
       status: "conference",

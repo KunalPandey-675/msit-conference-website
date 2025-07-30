@@ -99,35 +99,42 @@ export function Overview() {
           </Card>
 
           <Card className="bg-gradient-to-br from-blue-900 to-purple-900 text-white">
-            <CardContent className="p-6 sm:p-8 lg:p-12">
+            <CardContent className="p-3 sm:p-6 lg:p-8">
               <div className="flex items-center gap-3 mb-4 sm:mb-6">
                 <div className="p-2 sm:p-3 bg-white/20 rounded-lg">
                   <BookOpen className="w-6 h-6 sm:w-8 sm:h-8" />
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-bold">Why Attend?</h3>
+                <h3 className="text-2xl sm:text-2xl font-bold">Authors’ Expectations of Attending</h3>
               </div>
               <div className="space-y-4 sm:space-y-6">
                 <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
-                  <h4 className="font-semibold text-base sm:text-lg mb-2">Research Excellence</h4>
+                  <h4 className="font-semibold text-base sm:text-lg mb-2">Meaningful Feedback</h4>
                   <p className="text-xs sm:text-sm text-blue-100">
-                    Present your research to a distinguished audience and receive valuable feedback
+                    Authors anticipate insightful reviews that help refine their research and methodology.
                   </p>
                 </div>
                 <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
-                  <h4 className="font-semibold text-base sm:text-lg mb-2">Networking</h4>
+                  <h4 className="font-semibold text-base sm:text-lg mb-2">Broader Visibility</h4>
                   <p className="text-xs sm:text-sm text-blue-100">
-                    Connect with leading researchers and industry professionals
+                    An opportunity to showcase their work to a wider academic and industrial audience.
                   </p>
                 </div>
                 <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
-                  <h4 className="font-semibold text-base sm:text-lg mb-2">Publication</h4>
+                  <h4 className="font-semibold text-base sm:text-lg mb-2">Collaborative Opportunities</h4>
                   <p className="text-xs sm:text-sm text-blue-100">
-                    Get your work published in prestigious IEEE proceedings
+                    Engage with like-minded researchers to explore interdisciplinary collaborations.
+                  </p>
+                </div>
+                <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
+                  <h4 className="font-semibold text-base sm:text-lg mb-2">Academic Recognition</h4>
+                  <p className="text-xs sm:text-sm text-blue-100">
+                    Strengthen academic profile through participation in a reputed conference.
                   </p>
                 </div>
               </div>
             </CardContent>
           </Card>
+
         </div>
       </div>
     </section>

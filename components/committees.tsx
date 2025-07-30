@@ -21,10 +21,10 @@ import {
 
 export function Committees() {
   const director = {
-    name: "Prof. (Dr.) Archana Balyan",
-    title: "Director, MSIT",
+    name: "Name",
+    title: "",
     image: "/placeholder-user.jpg",
-    email: "director@msit.edu.in",
+    email: "name@gmail.com",
   }
 
   const leadership = [
