@@ -188,7 +188,7 @@ export function CallForPapers() {
               <div className="mt-4 bg-yellow-100 border-l-4 border-yellow-400 text-yellow-800 px-3 py-2 rounded flex items-center gap-2 text-sm">
                 <Info className="w-5 h-5 text-yellow-600" />
                 <p>
-                  <strong>Note:</strong> Max 20% plagiarism allowed. Ensure originality.
+                  <strong>Note:</strong> Max 15% plagiarism allowed. Ensure originality.
                 </p>
               </div>
             </CardHeader>
