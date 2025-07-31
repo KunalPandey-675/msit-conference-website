@@ -7,69 +7,99 @@ import { Check, Users, GraduationCap, Building, Globe } from "lucide-react"
 
 export function Registration() {
   const registrationCategories = [
-    {
-      category: "Students",
-      icon: <GraduationCap className="w-6 h-6 sm:w-8 sm:h-8" />,
-      color: "blue",
-      earlyBird: "₹2,000",
-      regular: "₹2,500",
-      features: [
-        "Access to all technical sessions",
-        "Conference kit and materials",
-        "Lunch and refreshments",
-        "Certificate of participation",
-        "Networking opportunities",
-      ],
-    },
-    {
-      category: "Academicians",
-      icon: <Users className="w-6 h-6 sm:w-8 sm:h-8" />,
-      color: "green",
-      earlyBird: "₹3,500",
-      regular: "₹4,000",
-      features: [
-        "Access to all technical sessions",
-        "Conference proceedings",
-        "Conference kit and materials",
-        "Lunch and refreshments",
-        "Certificate of participation",
-        "Networking dinner",
-      ],
-    },
-    {
-      category: "Industry Professionals",
-      icon: <Building className="w-6 h-6 sm:w-8 sm:h-8" />,
-      color: "purple",
-      earlyBird: "₹5,000",
-      regular: "₹6,000",
-      features: [
-        "Access to all technical sessions",
-        "Conference proceedings",
-        "Premium conference kit",
-        "Lunch and refreshments",
-        "Certificate of participation",
-        "Networking dinner",
-        "Industry exhibition access",
-      ],
-    },
-    {
-      category: "International Delegates",
-      icon: <Globe className="w-6 h-6 sm:w-8 sm:h-8" />,
-      color: "orange",
-      earlyBird: "$150",
-      regular: "$200",
-      features: [
-        "Access to all technical sessions",
-        "Conference proceedings",
-        "Premium conference kit",
-        "Lunch and refreshments",
-        "Certificate of participation",
-        "Networking dinner",
-        "Industry exhibition access",
-        "Welcome reception",
-      ],
-    },
-  ]
+  {
+    category: "Indian Students",
+    icon: <GraduationCap className="w-6 h-6 sm:w-8 sm:h-8" />,
+    color: "blue",
+    earlyBird: "₹1,500",
+    regular: "₹2,000",
+    features: [
+      "Access to all technical sessions",
+      "Conference kit and materials",
+      "Lunch and refreshments",
+      "Certificate of participation",
+      "Networking opportunities",
+    ],
+  },
+  {
+    category: "Indian Academicians",
+    icon: <Users className="w-6 h-6 sm:w-8 sm:h-8" />,
+    color: "green",
+    earlyBird: "₹2,000",
+    regular: "₹2,500",
+    features: [
+      "Access to all technical sessions",
+      "Conference proceedings",
+      "Conference kit and materials",
+      "Lunch and refreshments",
+      "Certificate of participation",
+      "Networking dinner",
+    ],
+  },
+  {
+    category: "Indian Industry Delegates",
+    icon: <Building className="w-6 h-6 sm:w-8 sm:h-8" />,
+    color: "purple",
+    earlyBird: "₹2,500",
+    regular: "₹3,000",
+    features: [
+      "Access to all technical sessions",
+      "Conference proceedings",
+      "Premium conference kit",
+      "Lunch and refreshments",
+      "Certificate of participation",
+      "Networking dinner",
+      "Industry exhibition access",
+    ],
+  },
+  // {
+  //   category: "International Students",
+  //   icon: <GraduationCap className="w-6 h-6 sm:w-8 sm:h-8" />,
+  //   color: "blue",
+  //   earlyBird: "",
+  //   regular: "",
+  //   features: [
+  //     "Access to all technical sessions",
+  //     "Conference kit and materials",
+  //     "Lunch and refreshments",
+  //     "Certificate of participation",
+  //     "Networking opportunities",
+  //   ],
+  // },
+  // {
+  //   category: "International Academicians",
+  //   icon: <Users className="w-6 h-6 sm:w-8 sm:h-8" />,
+  //   color: "green",
+  //   earlyBird: "",
+  //   regular: "",
+  //   features: [
+  //     "Access to all technical sessions",
+  //     "Conference proceedings",
+  //     "Conference kit and materials",
+  //     "Lunch and refreshments",
+  //     "Certificate of participation",
+  //     "Networking dinner",
+  //   ],
+  // },
+  {
+    category: "International Industry Delegates",
+    icon: <Globe className="w-6 h-6 sm:w-8 sm:h-8" />,
+    color: "orange",
+    earlyBird: "$80",
+    regular: "$100",
+    features: [
+      "Access to all technical sessions",
+      "Conference proceedings",
+      "Premium conference kit",
+      "Lunch and refreshments",
+      "Certificate of participation",
+      "Networking dinner",
+      "Industry exhibition access",
+      "Welcome reception",
+    ],
+  },
+];
+
 
   const registrationProcess = [
     "Fill the online registration form",
@@ -132,11 +162,11 @@ export function Registration() {
               <CardContent className="pt-0 flex flex-col h-full">
                 <div className="text-center mb-4 sm:mb-6">
                   <div className="mb-2 sm:mb-3">
-                    <span className="text-xs sm:text-sm text-blue-600 font-medium">Early Bird (Till Nov 8)</span>
+                    <span className="text-xs sm:text-sm text-blue-600 font-medium">Early Bird (Till Oct 6)</span>
                     <div className="text-2xl sm:text-3xl font-bold text-blue-900">{category.earlyBird}</div>
                   </div>
                   <div>
-                    <span className="text-xs sm:text-sm text-gray-600">Regular (Till Nov 10)</span>
+                    <span className="text-xs sm:text-sm text-gray-600">Regular (Till Oct 15)</span>
                     <div className="text-lg sm:text-xl font-semibold text-gray-700">{category.regular}</div>
                   </div>
                 </div>
@@ -149,7 +179,7 @@ export function Registration() {
                   ))}
                 </div>
                 <Button
-                  className={`w-full mt-4 sm:mt-6 bg-gradient-to-r ${getColorClasses(category.color)} text-white hover:shadow-lg transition-all duration-300 text-sm sm:text-base py-2 sm:py-3`}
+                  className={`w-full mt-1 sm:mt-6 bg-gradient-to-r ${getColorClasses(category.color)} text-white hover:shadow-lg transition-all duration-300 text-sm sm:text-base py-2 sm:py-3`}
                 >
                   Register Now
                 </Button>
@@ -181,39 +211,6 @@ export function Registration() {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-to-br from-blue-900 to-purple-900 text-white">
-            <CardContent className="p-6 sm:p-8 lg:p-12">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Important Information</h3>
-              <div className="space-y-4 sm:space-y-6">
-                <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
-                  <h4 className="font-semibold text-base sm:text-lg mb-2">Early Bird Discount</h4>
-                  <p className="text-xs sm:text-sm text-blue-100">
-                    Register before November 8, 2025 to avail special pricing
-                  </p>
-                </div>
-                <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
-                  <h4 className="font-semibold text-base sm:text-lg mb-2">Group Registration</h4>
-                  <p className="text-xs sm:text-sm text-blue-100">
-                    Special discounts available for groups of 5 or more
-                  </p>
-                </div>
-                <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
-                  <h4 className="font-semibold text-base sm:text-lg mb-2">Payment Methods</h4>
-                  <p className="text-xs sm:text-sm text-blue-100">Credit/Debit cards, Net Banking, UPI accepted</p>
-                </div>
-                <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
-                  <h4 className="font-semibold text-base sm:text-lg mb-2">Cancellation Policy</h4>
-                  <p className="text-xs sm:text-sm text-blue-100">
-                    50% refund till November 5, 2025. No refund thereafter
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Contact for Registration */}
-        <div className="mt-12 sm:mt-16 lg:mt-20">
           <Card className="bg-blue-50 border-blue-200 shadow-lg">
             <CardContent className="p-6 sm:p-8 text-center">
               <h3 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-4 sm:mb-6">
@@ -242,6 +239,41 @@ export function Registration() {
               </div>
             </CardContent>
           </Card>
+
+          {/* <Card className="bg-gradient-to-br from-blue-900 to-purple-900 text-white">
+            <CardContent className="p-6 sm:p-8 lg:p-12">
+              <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Important Information</h3>
+              <div className="space-y-4 sm:space-y-6">
+                <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
+                  <h4 className="font-semibold text-base sm:text-lg mb-2">Early Bird Discount</h4>
+                  <p className="text-xs sm:text-sm text-blue-100">
+                    Register before November 8, 2025 to avail special pricing
+                  </p>
+                </div>
+                <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
+                  <h4 className="font-semibold text-base sm:text-lg mb-2">Group Registration</h4>
+                  <p className="text-xs sm:text-sm text-blue-100">
+                    Special discounts available for groups of 5 or more
+                  </p>
+                </div>
+                <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
+                  <h4 className="font-semibold text-base sm:text-lg mb-2">Payment Methods</h4>
+                  <p className="text-xs sm:text-sm text-blue-100">Credit/Debit cards, Net Banking, UPI accepted</p>
+                </div>
+                <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
+                  <h4 className="font-semibold text-base sm:text-lg mb-2">Cancellation Policy</h4>
+                  <p className="text-xs sm:text-sm text-blue-100">
+                    50% refund till November 5, 2025. No refund thereafter
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card> */}
+        </div>
+
+        {/* Contact for Registration */}
+        <div className="mt-12 sm:mt-16 lg:mt-20">
+          
         </div>
       </div>
     </section>

@@ -18,13 +18,13 @@ export function Contact() {
     {
       icon: <Phone className="w-5 h-5 sm:w-6 sm:h-6" />,
       title: "Phone",
-      details: ["+91-11-2559-1610", "+91-11-2559-1620", "Fax: +91-11-2559-1630"],
+      details: ["+91-011-45037193", "+91-011-45037193"],
     },
-    {
-      icon: <Mail className="w-5 h-5 sm:w-6 sm:h-6" />,
-      title: "Email",
-      details: ["nci-tide@msit.edu.in", "conference@msit.edu.in", "info@msit.edu.in"],
-    },
+    // {
+    //   icon: <Mail className="w-5 h-5 sm:w-6 sm:h-6" />,
+    //   title: "Email",
+    //   details: ["nci-tide@msit.edu.in", "conference@msit.edu.in", "info@msit.edu.in"],
+    // },
     {
       icon: <Clock className="w-5 h-5 sm:w-6 sm:h-6" />,
       title: "Office Hours",
@@ -36,20 +36,20 @@ export function Contact() {
     {
       name: "Prof. (Dr.) Neeru Rathee",
       title: "Convener",
-      email: "neeru.rathee@msit.edu.in",
-      phone: "+91-98765-43210",
+      // email: "neeru.rathee@msit.edu.in",
+      // phone: "+91-98765-43210",
     },
     {
       name: "Prof. (Dr.) Pradeep Sangwan",
       title: "Co-Convener",
-      email: "pradeep.sangwan@msit.edu.in",
-      phone: "+91-98765-43211",
+      // email: "pradeep.sangwan@msit.edu.in",
+      // phone: "+91-98765-43211",
     },
     {
       name: "Prof. (Dr.) Puneet Azad",
       title: "Co-Convener",
-      email: "puneet.azad@msit.edu.in",
-      phone: "+91-98765-43212",
+      // email: "puneet.azad@msit.edu.in",
+      // phone: "+91-98765-43212",
     },
   ]
 
@@ -184,8 +184,8 @@ export function Contact() {
                     {contact.title}
                   </Badge>
                   <div className="space-y-1 sm:space-y-2">
-                    <p className="text-sm sm:text-base text-blue-700">{contact.email}</p>
-                    <p className="text-sm sm:text-base text-blue-700">{contact.phone}</p>
+                    {/* <p className="text-sm sm:text-base text-blue-700">{contact.email}</p>
+                    <p className="text-sm sm:text-base text-blue-700">{contact.phone}</p> */}
                   </div>
                 </CardContent>
               </Card>

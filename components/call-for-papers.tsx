@@ -65,14 +65,12 @@ export function CallForPapers() {
   ]
 
   const formattingGuidelines = [
-    "Use IEEE 2-column format strictly (A4 size)",
-    "Paper length: 4–10 pages (depending on type)",
-    "Font size: 10pt, Times New Roman",
-    "Margins: Top 19mm, Bottom 43mm, Left/Right 14.32mm",
-    "Ensure references are IEEE formatted",
-    "Avoid author details for double-blind review",
-    "Maximum PDF file size: 10MB",
-  ]
+    "Authors must submit original, unpublished work that is not under review elsewhere.",
+    "Papers should be formatted as per the IEEE/ACM Conference template (provide link).",
+    "Paper Length: 6–8 pages (including references, figures, and tables). Extra pages may incur an additional fee.",
+    "All submissions will undergo a double-blind peer-review process.",
+    "Submissions must be made through the EasyChair/ConfTool portal: (insert submission link).",
+  ];
 
   const authorGuidelines = [
     "Manuscripts must be original, unpublished, and not under consideration elsewhere.",
@@ -265,12 +263,12 @@ export function CallForPapers() {
               <h4 className="font-semibold text-base sm:text-lg mb-2">Important Dates</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sm:text-base">
                 <div>
-                  <span className="font-medium">Submission Deadline:</span><br />
-                  <span className="text-blue-100">October 15, 2025</span>
+                  <span className="font-medium">Paper Submission Deadline:</span><br />
+                  <span className="text-blue-100">September 15, 2025</span>
                 </div>
                 <div>
-                  <span className="font-medium">Notification:</span><br />
-                  <span className="text-blue-100">October 30, 2025</span>
+                  <span className="font-medium">Notification of Acceptance:</span><br />
+                  <span className="text-blue-100">September 30, 2025</span>
                 </div>
               </div>
             </div>
