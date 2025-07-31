@@ -9,6 +9,7 @@ import { Sponsors } from "@/components/sponsors"
 import { Committees } from "@/components/committees"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
+import CMTAcknowledgment  from "../components/CMTAcknowledgment"
 
 export default function Home() {
   return (
@@ -17,12 +18,13 @@ export default function Home() {
       <Hero />
       <Overview />
       <CallForPapers />
-      <ImportantDates />
       <ConferenceTracks />
+      <ImportantDates />
       <Registration />
       <Sponsors />
       <Committees />
       <Contact />
+      <CMTAcknowledgment />
       <Footer />
     </main>
   )

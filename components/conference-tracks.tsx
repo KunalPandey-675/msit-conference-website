@@ -11,11 +11,7 @@ export function ConferenceTracks() {
       icon: <Cpu className="w-6 h-6 sm:w-8 sm:h-8" />,
       color: "blue",
       topics: [
-        "ASIC and FPGA Design",
-        "System-on-Chip (SoC) Architecture",
-        "Low Power VLSI Design",
-        "Embedded System Applications",
-        "IoT Hardware Design",
+        
       ],
     },
     {
@@ -23,11 +19,7 @@ export function ConferenceTracks() {
       icon: <Wifi className="w-6 h-6 sm:w-8 sm:h-8" />,
       color: "green",
       topics: [
-        "5G and Beyond Technologies",
-        "MIMO and Beamforming",
-        "Cognitive Radio Networks",
-        "Wireless Sensor Networks",
-        "Mobile Ad-hoc Networks",
+        
       ],
     },
     {
@@ -35,11 +27,7 @@ export function ConferenceTracks() {
       icon: <Brain className="w-6 h-6 sm:w-8 sm:h-8" />,
       color: "purple",
       topics: [
-        "Digital Signal Processing",
-        "Image and Video Processing",
-        "Machine Learning Algorithms",
-        "Deep Learning Applications",
-        "Pattern Recognition",
+       
       ],
     },
     {
@@ -47,11 +35,7 @@ export function ConferenceTracks() {
       icon: <Zap className="w-6 h-6 sm:w-8 sm:h-8" />,
       color: "yellow",
       topics: [
-        "Renewable Energy Systems",
-        "Power Converters and Inverters",
-        "Electric Vehicle Technology",
-        "Smart Grid Systems",
-        "Energy Storage Solutions",
+       
       ],
     },
     {
@@ -59,11 +43,7 @@ export function ConferenceTracks() {
       icon: <Shield className="w-6 h-6 sm:w-8 sm:h-8" />,
       color: "red",
       topics: [
-        "Network Security Protocols",
-        "Cryptography and Encryption",
-        "Blockchain Technology",
-        "IoT Security",
-        "Cyber Threat Detection",
+       
       ],
     },
     {
@@ -71,11 +51,7 @@ export function ConferenceTracks() {
       icon: <Smartphone className="w-6 h-6 sm:w-8 sm:h-8" />,
       color: "indigo",
       topics: [
-        "Mobile Application Development",
-        "Pervasive Computing",
-        "Context-Aware Systems",
-        "Mobile Cloud Computing",
-        "Augmented Reality Applications",
+       
       ],
     },
     {
@@ -83,11 +59,7 @@ export function ConferenceTracks() {
       icon: <Radio className="w-6 h-6 sm:w-8 sm:h-8" />,
       color: "pink",
       topics: [
-        "Antenna Design and Analysis",
-        "Microwave Circuits",
-        "RF System Design",
-        "Millimeter Wave Technology",
-        "Electromagnetic Compatibility",
+       
       ],
     },
     {
@@ -95,11 +67,7 @@ export function ConferenceTracks() {
       icon: <Satellite className="w-6 h-6 sm:w-8 sm:h-8" />,
       color: "teal",
       topics: [
-        "Satellite Network Protocols",
-        "Earth Station Design",
-        "Satellite Navigation Systems",
-        "Remote Sensing Applications",
-        "Space Communication Systems",
+       
       ],
     },
     {
@@ -107,11 +75,7 @@ export function ConferenceTracks() {
       icon: <CircuitBoard className="w-6 h-6 sm:w-8 sm:h-8" />,
       color: "orange",
       topics: [
-        "Quantum Computing",
-        "Nanotechnology Applications",
-        "Biomedical Electronics",
-        "Wearable Technology",
-        "Industry 4.0 Solutions",
+       
       ],
     },
   ]
@@ -157,8 +121,8 @@ export function ConferenceTracks() {
                   <span className="text-blue-900 leading-tight">{track.title}</span>
                 </CardTitle>
               </CardHeader>
-              <CardContent className="pt-0">
-                <div className="space-y-2 sm:space-y-3">
+              {/* <CardContent className="pt-0">
+                <div className="space-y-0 sm:space-y-0">
                   {track.topics.map((topic, topicIndex) => (
                     <div key={topicIndex} className="flex items-start gap-2 sm:gap-3">
                       <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
@@ -166,7 +130,7 @@ export function ConferenceTracks() {
                     </div>
                   ))}
                 </div>
-              </CardContent>
+              </CardContent> */}
             </Card>
           ))}
         </div>
