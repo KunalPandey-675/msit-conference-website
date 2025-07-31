@@ -164,11 +164,11 @@ export function ImportantDates() {
               <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Quick Reference</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
-                  <h4 className="font-semibold text-base sm:text-lg mb-2">Paper Submission</h4>
+                  <h4 className="font-semibold text-base sm:text-lg mb-2">Paper Submission Start's</h4>
                   <p className="text-sm sm:text-base text-blue-100">August 1, 2025</p>
                 </div>
                 <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
-                  <h4 className="font-semibold text-base sm:text-lg mb-2">Early Bird Registration</h4>
+                  <h4 className="font-semibold text-base sm:text-lg mb-2">Early Bird Registration Deadline</h4>
                   <p className="text-sm sm:text-base text-blue-100">October 6, 2025</p>
                 </div>
                 <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm sm:col-span-2 lg:col-span-1">
