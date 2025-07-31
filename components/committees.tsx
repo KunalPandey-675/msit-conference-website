@@ -231,6 +231,34 @@ export function Committees() {
           </p>
         </div>
 
+        {/* Patrons Section */}
+        <div className="mb-12 sm:mb-16 lg:mb-20">
+          <h3 className="text-2xl sm:text-3xl font-bold text-blue-900 text-center mb-8 sm:mb-12">
+            Patrons
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+            {patrons.map((patron, index) => (
+              <Card
+                key={index}
+                className="bg-white border-blue-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <CardContent className="p-4 sm:p-6 text-center">
+                  <Avatar className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 border-2 border-blue-200">
+                    <AvatarImage src={patron.image || "/placeholder.svg"} alt={patron.name} />
+                    <AvatarFallback className="text-base sm:text-lg font-bold bg-blue-100 text-blue-600">
+                      {getInitials(patron.name)}
+                    </AvatarFallback>
+                  </Avatar>
+                  <h4 className="text-lg sm:text-xl font-bold text-blue-900 mb-1 sm:mb-2">{patron.name}</h4>
+                  <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-2 sm:mb-3 text-xs sm:text-sm">
+                    {patron.title}
+                  </Badge>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
         {/* Organizing Chair Section */}
         {OrganizingChair.length > 0 && (
           <div className="mb-12 sm:mb-16 lg:mb-20">
@@ -319,37 +347,7 @@ export function Committees() {
           ))}
         </div>
 
-        {/* Contact Information */}
-        <div className="mt-12 sm:mt-16 lg:mt-20">
-          <Card className="bg-blue-50 border-blue-200 shadow-lg">
-            <CardContent className="p-6 sm:p-8 text-center">
-              <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6">
-                <div className="p-2 sm:p-3 bg-blue-100 rounded-lg">
-                  <Users className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600" />
-                </div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-blue-900">Contact the Committee</h3>
-              </div>
-              <p className="text-base sm:text-lg text-blue-700 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed">
-                For any queries related to the conference, please feel free to contact the respective committee members
-                or reach out to the organizing committee.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
-                <div className="bg-white rounded-lg p-4 sm:p-6 shadow-md">
-                  <h4 className="font-semibold text-base sm:text-lg text-blue-900 mb-2">General Inquiries</h4>
-                  {/* <p className="text-sm sm:text-base text-blue-700">nci-tide@msit.edu.in</p> */}
-                </div>
-                <div className="bg-white rounded-lg p-4 sm:p-6 shadow-md">
-                  <h4 className="font-semibold text-base sm:text-lg text-blue-900 mb-2">Technical Support</h4>
-                  {/* <p className="text-sm sm:text-base text-blue-700">tech-support@msit.edu.in</p> */}
-                </div>
-                <div className="bg-white rounded-lg p-4 sm:p-6 shadow-md sm:col-span-2 lg:col-span-1">
-                  <h4 className="font-semibold text-base sm:text-lg text-blue-900 mb-2">Registration</h4>
-                  {/* <p className="text-sm sm:text-base text-blue-700">registration@msit.edu.in</p> */}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+
       </div>
     </section>
   )
