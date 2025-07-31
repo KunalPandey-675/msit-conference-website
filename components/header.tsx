@@ -54,7 +54,7 @@ export function Header() {
               <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-blue-900 leading-tight">
                 NCI-TIDE-MSIT 2025
               </h1>
-              <p className="text-xs sm:text-sm text-blue-600 hidden sm:block">Nov 20-21, 2025 | MSIT, Delhi</p>
+              <p className="text-xs sm:text-sm text-blue-600 hidden sm:block">Nov 13-14, 2025 | MSIT, Delhi</p>
             </div>
           </div>
 
