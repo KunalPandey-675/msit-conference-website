@@ -83,7 +83,7 @@ export function Committees() {
       name: "Prof. Archana Balyan",
       title: "Organizing Chair",
       image: "/placeholder-user.jpg",
-      email: "archana.balyan@msit.edu.in",
+      email: "archana.balyan@msit.in",
     }
   ]
   const leadership = [
@@ -92,21 +92,21 @@ export function Committees() {
       title: "Convener",
       department: "Department of ECE, MSIT",
       image: "/placeholder-user.jpg",
-      email: "neeru.rathee@msit.edu.in",
+      email: "neeru.rathee@msit.in",
     },
     {
       name: "Prof. (Dr.) Pradeep Sangwan",
       title: "Co-Convener",
       department: "Department of ECE, MSIT",
       image: "/placeholder-user.jpg",
-      email: "pradeep.sangwan@msit.edu.in",
+      email: "pradeep.sangwan@msit.in",
     },
     {
       name: "Prof. (Dr.) Puneet Azad",
       title: "Co-Convener",
       department: "Department of ECE, MSIT",
       image: "/placeholder-user.jpg",
-      email: "puneet.azad@msit.edu.in",
+      email: "puneet.azad@msit.in",
     },
   ]
 

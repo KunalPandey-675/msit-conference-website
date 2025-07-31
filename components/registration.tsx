@@ -228,12 +228,12 @@ export function Registration() {
                 </div>
                 <div className="bg-white rounded-lg p-4 sm:p-6 shadow-md">
                   <h4 className="font-semibold text-base sm:text-lg text-blue-900 mb-2">Payment Support</h4>
-                  {/* <p className="text-sm sm:text-base text-blue-700">payments@msit.edu.in</p> */}
+                  {/* <p className="text-sm sm:text-base text-blue-700">payments@msit.in</p> */}
                   <p className="text-sm sm:text-base text-blue-700">+91-011-45037193</p>
                 </div>
                 <div className="bg-white rounded-lg p-4 sm:p-6 shadow-md sm:col-span-2 lg:col-span-1">
                   <h4 className="font-semibold text-base sm:text-lg text-blue-900 mb-2">Technical Support</h4>
-                  {/* <p className="text-sm sm:text-base text-blue-700">tech-support@msit.edu.in</p> */}
+                  {/* <p className="text-sm sm:text-base text-blue-700">tech-support@msit.in</p> */}
                   <p className="text-sm sm:text-base text-blue-700">+91-011-45037193</p>
                 </div>
               </div>

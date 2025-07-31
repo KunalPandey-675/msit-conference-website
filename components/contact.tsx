@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { MapPin, Phone, Mail, Clock, Send, Building } from "lucide-react"
+import { MapPin, Phone, Mail, Send, Building } from "lucide-react"
 
 export function Contact() {
   const contactInfo = [
@@ -23,32 +23,28 @@ export function Contact() {
     // {
     //   icon: <Mail className="w-5 h-5 sm:w-6 sm:h-6" />,
     //   title: "Email",
-    //   details: ["nci-tide@msit.edu.in", "conference@msit.edu.in", "info@msit.edu.in"],
+    //   details: ["nci-tide@msit.in", "conference@msit.in", "info@msit.in"],
     // },
-    {
-      icon: <Clock className="w-5 h-5 sm:w-6 sm:h-6" />,
-      title: "Office Hours",
-      details: ["Monday - Friday: 9:00 AM - 6:00 PM", "Saturday: 9:00 AM - 2:00 PM", "Sunday: Closed"],
-    },
+
   ]
 
   const keyContacts = [
     {
       name: "Prof. (Dr.) Neeru Rathee",
       title: "Convener",
-      // email: "neeru.rathee@msit.edu.in",
+      // email: "neeru.rathee@msit.in",
       // phone: "+91-98765-43210",
     },
     {
       name: "Prof. (Dr.) Pradeep Sangwan",
       title: "Co-Convener",
-      // email: "pradeep.sangwan@msit.edu.in",
+      // email: "pradeep.sangwan@msit.in",
       // phone: "+91-98765-43211",
     },
     {
       name: "Prof. (Dr.) Puneet Azad",
       title: "Co-Convener",
-      // email: "puneet.azad@msit.edu.in",
+      // email: "puneet.azad@msit.in",
       // phone: "+91-98765-43212",
     },
   ]

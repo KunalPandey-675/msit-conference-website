@@ -75,7 +75,7 @@ export function Footer() {
                 </div>
                 <div className="flex items-center gap-2 sm:gap-3 text-sm sm:text-base">
                   <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-blue-300 flex-shrink-0" />
-                  <span className="text-blue-100">nci-tide@msit.edu.in</span>
+                  <span className="text-blue-100">nci-tide@msit.in</span>
                 </div>
               </div>
             </div>
