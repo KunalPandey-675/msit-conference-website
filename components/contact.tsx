@@ -184,8 +184,8 @@ export function Contact() {
                     {contact.title}
                   </Badge>
                   <div className="space-y-1 sm:space-y-2">
-                    <p className="text-sm sm:text-base text-blue-700">{contact.email}</p>
-                    <p className="text-sm sm:text-base text-blue-700">{contact.phone}</p>
+                    {/* <p className="text-sm sm:text-base text-blue-700">{contact.email}</p>
+                    <p className="text-sm sm:text-base text-blue-700">{contact.phone}</p> */}
                   </div>
                 </CardContent>
               </Card>

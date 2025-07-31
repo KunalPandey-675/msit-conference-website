@@ -169,7 +169,7 @@ export function Committees() {
         </div>
 
         {/* Director Section */}
-        <div className="mb-12 sm:mb-16 lg:mb-20">
+        {/* <div className="mb-12 sm:mb-16 lg:mb-20">
           <Card className="bg-gradient-to-r from-blue-900 to-purple-900 text-white border-0 shadow-2xl max-w-2xl mx-auto">
             <CardContent className="p-6 sm:p-8 text-center">
               <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6">
@@ -189,7 +189,7 @@ export function Committees() {
               <p className="text-sm sm:text-base text-blue-200">{director.email}</p>
             </CardContent>
           </Card>
-        </div>
+        </div> */}
 
         {/* Leadership Team */}
         <div className="mb-12 sm:mb-16 lg:mb-20">
