@@ -3,82 +3,71 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Cpu, Wifi, Zap, Shield, Brain, Smartphone, Radio, Satellite, CircuitBoard } from "lucide-react"
+import {
+  Stethoscope,
+  Image,
+  Ruler,
+  BrainCircuit,
+  BookOpenCheck,
+} from "lucide-react";
 
 export function ConferenceTracks() {
-  const tracks = [
-    {
-      title: "VLSI Design and Embedded Systems",
-      icon: <Cpu className="w-6 h-6 sm:w-8 sm:h-8" />,
-      color: "blue",
-      topics: [
-        
-      ],
-    },
-    {
-      title: "Wireless Communication Systems",
-      icon: <Wifi className="w-6 h-6 sm:w-8 sm:h-8" />,
-      color: "green",
-      topics: [
-        
-      ],
-    },
-    {
-      title: "Signal Processing and Machine Learning",
-      icon: <Brain className="w-6 h-6 sm:w-8 sm:h-8" />,
-      color: "purple",
-      topics: [
-       
-      ],
-    },
-    {
-      title: "Power Electronics and Energy Systems",
-      icon: <Zap className="w-6 h-6 sm:w-8 sm:h-8" />,
-      color: "yellow",
-      topics: [
-       
-      ],
-    },
-    {
-      title: "Cybersecurity and Network Security",
-      icon: <Shield className="w-6 h-6 sm:w-8 sm:h-8" />,
-      color: "red",
-      topics: [
-       
-      ],
-    },
-    {
-      title: "Mobile and Ubiquitous Computing",
-      icon: <Smartphone className="w-6 h-6 sm:w-8 sm:h-8" />,
-      color: "indigo",
-      topics: [
-       
-      ],
-    },
-    {
-      title: "RF and Microwave Engineering",
-      icon: <Radio className="w-6 h-6 sm:w-8 sm:h-8" />,
-      color: "pink",
-      topics: [
-       
-      ],
-    },
-    {
-      title: "Satellite Communication",
-      icon: <Satellite className="w-6 h-6 sm:w-8 sm:h-8" />,
-      color: "teal",
-      topics: [
-       
-      ],
-    },
-    {
-      title: "Emerging Technologies",
-      icon: <CircuitBoard className="w-6 h-6 sm:w-8 sm:h-8" />,
-      color: "orange",
-      topics: [
-       
-      ],
-    },
-  ]
+ const tracks = [
+  {
+    title: "Smart Embedded Systems and Real-Time Applications",
+    icon: <Cpu className="w-6 h-6 sm:w-8 sm:h-8" />,
+    color: "blue",
+    topics: [],
+  },
+  {
+    title: "Communication, Computing, and Cybersecurity",
+    icon: <Wifi className="w-6 h-6 sm:w-8 sm:h-8" />,
+    color: "green",
+    topics: [],
+  },
+  {
+    title: "Technology for Defence and National Security",
+    icon: <Shield className="w-6 h-6 sm:w-8 sm:h-8" />,
+    color: "red",
+    topics: [],
+  },
+  {
+    title: "Sustainable Energy and Green Technology",
+    icon: <Zap className="w-6 h-6 sm:w-8 sm:h-8" />,
+    color: "yellow",
+    topics: [],
+  },
+  {
+    title: "Healthcare in Engineering Applications",
+    icon: <Stethoscope className="w-6 h-6 sm:w-8 sm:h-8" />,
+    color: "teal",
+    topics: [],
+  },
+  {
+    title: "Multi-domain Applications of Signal and Image Processing",
+    icon: <Image className="w-6 h-6 sm:w-8 sm:h-8" />,
+    color: "purple",
+    topics: [],
+  },
+  {
+    title: "Digital Metrology and Data-Driven Measurement Systems",
+    icon: <Ruler className="w-6 h-6 sm:w-8 sm:h-8" />,
+    color: "indigo",
+    topics: [],
+  },
+  {
+    title: "Soft Computing in Uncertain and Dynamic Environments",
+    icon: <BrainCircuit className="w-6 h-6 sm:w-8 sm:h-8" />,
+    color: "pink",
+    topics: [],
+  },
+  {
+    title: "Engineering Innovations for Transforming Modern Education",
+    icon: <BookOpenCheck className="w-6 h-6 sm:w-8 sm:h-8" />,
+    color: "orange",
+    topics: [],
+  },
+];
 
   const getColorClasses = (color: string) => {
     const colorMap = {

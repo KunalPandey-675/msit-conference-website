@@ -18,13 +18,13 @@ export function Contact() {
     {
       icon: <Phone className="w-5 h-5 sm:w-6 sm:h-6" />,
       title: "Phone",
-      details: ["+91-11-2559-1610", "+91-11-2559-1620", "Fax: +91-11-2559-1630"],
+      details: ["+91-011-45037193", "+91-011-45037193"],
     },
-    {
-      icon: <Mail className="w-5 h-5 sm:w-6 sm:h-6" />,
-      title: "Email",
-      details: ["nci-tide@msit.edu.in", "conference@msit.edu.in", "info@msit.edu.in"],
-    },
+    // {
+    //   icon: <Mail className="w-5 h-5 sm:w-6 sm:h-6" />,
+    //   title: "Email",
+    //   details: ["nci-tide@msit.edu.in", "conference@msit.edu.in", "info@msit.edu.in"],
+    // },
     {
       icon: <Clock className="w-5 h-5 sm:w-6 sm:h-6" />,
       title: "Office Hours",

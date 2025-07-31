@@ -270,15 +270,15 @@ export function Committees() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
                 <div className="bg-white rounded-lg p-4 sm:p-6 shadow-md">
                   <h4 className="font-semibold text-base sm:text-lg text-blue-900 mb-2">General Inquiries</h4>
-                  <p className="text-sm sm:text-base text-blue-700">nci-tide@msit.edu.in</p>
+                  {/* <p className="text-sm sm:text-base text-blue-700">nci-tide@msit.edu.in</p> */}
                 </div>
                 <div className="bg-white rounded-lg p-4 sm:p-6 shadow-md">
                   <h4 className="font-semibold text-base sm:text-lg text-blue-900 mb-2">Technical Support</h4>
-                  <p className="text-sm sm:text-base text-blue-700">tech-support@msit.edu.in</p>
+                  {/* <p className="text-sm sm:text-base text-blue-700">tech-support@msit.edu.in</p> */}
                 </div>
                 <div className="bg-white rounded-lg p-4 sm:p-6 shadow-md sm:col-span-2 lg:col-span-1">
                   <h4 className="font-semibold text-base sm:text-lg text-blue-900 mb-2">Registration</h4>
-                  <p className="text-sm sm:text-base text-blue-700">registration@msit.edu.in</p>
+                  {/* <p className="text-sm sm:text-base text-blue-700">registration@msit.edu.in</p> */}
                 </div>
               </div>
             </CardContent>

@@ -165,15 +165,15 @@ export function ImportantDates() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
                   <h4 className="font-semibold text-base sm:text-lg mb-2">Paper Submission</h4>
-                  <p className="text-sm sm:text-base text-blue-100">October 15, 2025</p>
+                  <p className="text-sm sm:text-base text-blue-100">August 1, 2025</p>
                 </div>
                 <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
                   <h4 className="font-semibold text-base sm:text-lg mb-2">Early Bird Registration</h4>
-                  <p className="text-sm sm:text-base text-blue-100">November 8, 2025</p>
+                  <p className="text-sm sm:text-base text-blue-100">October 6, 2025</p>
                 </div>
                 <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm sm:col-span-2 lg:col-span-1">
                   <h4 className="font-semibold text-base sm:text-lg mb-2">Conference Dates</h4>
-                  <p className="text-sm sm:text-base text-blue-100">November 13-14, 2025</p>
+                  <p className="text-sm sm:text-base text-blue-100">November 20-21, 2025</p>
                 </div>
               </div>
             </CardContent>
