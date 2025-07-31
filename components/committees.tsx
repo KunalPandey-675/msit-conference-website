@@ -20,13 +20,72 @@ import {
 } from "lucide-react"
 
 export function Committees() {
-  const director = {
-    name: "Name",
-    title: "",
-    image: "/placeholder-user.jpg",
-    email: "name@gmail.com",
-  }
+  const patrons = [
+    {
+      name: "Sh. Kaptan Singh",
+      title: "President, SMES, New Delhi",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Sh. Brahm Pal Singh",
+      title: "Patron, SMES, New Delhi",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Ms. Esha Jakhar",
+      title: "Sr. Vice President, SMES, New Delhi",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Sh. Y.P.S. Verma",
+      title: "Vice President, SMES, New Delhi",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Prof. Prem Vrat",
+      title: "Pro-Chancellor, North Cap University, Gurgaon",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Sh. Karnal Singh",
+      title: "IPS, Former Director - Enforcement Directorate",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Mr. Ajit Singh Chaudhary",
+      title: "Secretary, SMES, New Delhi",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Mr. Raj Pal Solanki",
+      title: "Treasurer, SMES, New Delhi",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Dr. Tejbir Singh Rana",
+      title: "Convener/Member Secretary, SMES, New Delhi",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Sh. S.S. Solanki",
+      title: "Joint Secretary, SMES, New Delhi",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Sh. Shiv Ram Tewatia",
+      title: "Joint Secretary, SMES, New Delhi",
+      image: "/placeholder-user.jpg",
+    },
+  ]
 
+  const OrganizingChair = [
+    {
+      name: "Prof. Archana Balyan",
+      title: "Organizing Chair",
+      image: "/placeholder-user.jpg",
+      email: "archana.balyan@msit.edu.in",
+    }
+  ]
   const leadership = [
     {
       name: "Prof. (Dr.) Neeru Rathee",
@@ -153,6 +212,10 @@ export function Committees() {
       .toUpperCase()
   }
 
+  // Extract organizing chair from leadership
+  const organizingChair = leadership.find((l) => l.title === "Organizing Chair")
+  const otherLeadership = leadership.filter((l) => l.title !== "Organizing Chair")
+
   return (
     <section id="committees" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-white to-blue-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -168,28 +231,57 @@ export function Committees() {
           </p>
         </div>
 
-        {/* Director Section */}
+        {/* Patrons Section */}
         <div className="mb-12 sm:mb-16 lg:mb-20">
-          <Card className="bg-gradient-to-r from-blue-900 to-purple-900 text-white border-0 shadow-2xl max-w-2xl mx-auto">
-            <CardContent className="p-6 sm:p-8 text-center">
-              <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6">
-                <div className="p-2 sm:p-3 bg-white/20 rounded-lg">
-                  <Crown className="w-6 h-6 sm:w-8 sm:h-8" />
-                </div>
-                <h3 className="text-2xl sm:text-3xl font-bold">Conference Patron</h3>
-              </div>
-              <Avatar className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-4 sm:mb-6 border-4 border-white/20">
-                <AvatarImage src={director.image || "/placeholder.svg"} alt={director.name} />
-                <AvatarFallback className="text-lg sm:text-xl font-bold bg-white/20 text-white">
-                  {getInitials(director.name)}
-                </AvatarFallback>
-              </Avatar>
-              <h4 className="text-xl sm:text-2xl font-bold mb-2">{director.name}</h4>
-              <p className="text-base sm:text-lg text-blue-100 mb-2">{director.title}</p>
-              <p className="text-sm sm:text-base text-blue-200">{director.email}</p>
-            </CardContent>
-          </Card>
+          <div className="flex items-center justify-center gap-3 mb-4 sm:mb-6">
+            <h3 className="text-2xl sm:text-3xl font-bold text-blue-900">Patrons</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
+            {patrons.map((patron, idx) => (
+              <Card
+                key={idx}
+                className="bg-white border-blue-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <CardContent className="p-4 sm:p-6 text-center">
+                  <Avatar className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 border-2 border-blue-200">
+                    <AvatarImage src={patron.image || "/placeholder.svg"} alt={patron.name} />
+                    <AvatarFallback className="text-base sm:text-lg font-bold bg-blue-100 text-blue-600">
+                      {getInitials(patron.name)}
+                    </AvatarFallback>
+                  </Avatar>
+                  <h4 className="text-lg sm:text-xl font-bold text-blue-900 mb-1 sm:mb-2">{patron.name}</h4>
+                  <p className="text-xs sm:text-sm text-blue-700">{patron.title}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
+
+        {/* Organizing Chair Section */}
+        {OrganizingChair.length > 0 && (
+          <div className="mb-12 sm:mb-16 lg:mb-20">
+            <h3 className="text-2xl sm:text-3xl font-bold text-blue-900 text-center mb-8 sm:mb-12">
+              Organizing Chair
+            </h3>
+            <div className="flex justify-center">
+              <Card className="bg-white border-blue-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full max-w-sm">
+                <CardContent className="p-4 sm:p-6 text-center">
+                  <Avatar className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 border-2 border-blue-200">
+                    <AvatarImage src={OrganizingChair[0].image || "/placeholder.svg"} alt={OrganizingChair[0].name} />
+                    <AvatarFallback className="text-base sm:text-lg font-bold bg-blue-100 text-blue-600">
+                      {getInitials(OrganizingChair[0].name)}
+                    </AvatarFallback>
+                  </Avatar>
+                  <h4 className="text-lg sm:text-xl font-bold text-blue-900 mb-1 sm:mb-2">{OrganizingChair[0].name}</h4>
+                  <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-2 sm:mb-3 text-xs sm:text-sm">
+                    {OrganizingChair[0].title}
+                  </Badge>
+                  <p className="text-xs sm:text-sm text-blue-600">{OrganizingChair[0].email}</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        )}
 
         {/* Leadership Team */}
         <div className="mb-12 sm:mb-16 lg:mb-20">
@@ -197,7 +289,7 @@ export function Committees() {
             Conference Leadership
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
-            {leadership.map((leader, index) => (
+            {otherLeadership.map((leader, index) => (
               <Card
                 key={index}
                 className="bg-white border-blue-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
