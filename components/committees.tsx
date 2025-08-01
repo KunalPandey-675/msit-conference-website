@@ -227,7 +227,7 @@ export function Committees() {
             Organizing Committee
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-blue-700 max-w-4xl mx-auto leading-relaxed px-4">
-            Meet the dedicated team of faculty and staff members organizing NCI-TIDE-MSIT 2025
+            Meet the dedicated team of faculty and staff members organizing NCI-TIDE 2025
           </p>
         </div>
 

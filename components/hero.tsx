@@ -36,13 +36,13 @@ export function Hero() {
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-            <span className="block">NCI-TIDE</span>
-            <span className="block text-3xl sm:text-4xl lg:text-6xl text-blue-200">MSIT 2025</span>
+            <span className="block">NCI-TIDE 2025</span>
+            {/* <span className="block text-3xl sm:text-4xl lg:text-6xl text-blue-200">MSIT 2025</span> */}
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl lg:text-2xl text-blue-100 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
-            National Conference on Innovation in Technology and Industrial Development in Engineering
+            National Conference on Integrating Technologies, Ideas and Disciplines for Engineering Innovation (NCI-TIDE 2025)
           </p>
 
           {/* Organizer */}
@@ -113,7 +113,7 @@ export function Hero() {
                 <Award className="w-6 h-6 sm:w-8 sm:h-8" />
               </div>
               <h3 className="text-base sm:text-lg font-semibold mb-2">Publication</h3>
-              <p className="text-sm sm:text-base text-blue-100">IEEE Proceedings</p>
+              {/* <p className="text-sm sm:text-base text-blue-100">IEEE Proceedings</p> */}
             </CardContent>
           </Card>
         </div>

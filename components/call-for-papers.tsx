@@ -69,7 +69,7 @@ export function CallForPapers() {
     "Papers should be formatted as per the IEEE/ACM Conference template (provide link).",
     "Paper Length: 6–8 pages (including references, figures, and tables). Extra pages may incur an additional fee.",
     "All submissions will undergo a double-blind peer-review process.",
-    "Submissions must be made through the EasyChair/ConfTool portal: (insert submission link).",
+    "Submissions must be made through the CMT link: (insert submission link).",
   ];
 
   const authorGuidelines = [
@@ -78,7 +78,7 @@ export function CallForPapers() {
     "Ensure inclusion of abstract, keywords, and properly formatted references.",
     "Submit your paper strictly in PDF format via the submission portal.",
     "All submissions will undergo a double-blind peer-review process.",
-    "Accepted papers will be published in the official IEEE Xplore proceedings.",
+    // "Accepted papers will be published in the official IEEE Xplore proceedings.",
   ]
 
   return (
@@ -94,7 +94,7 @@ export function CallForPapers() {
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-blue-700 max-w-4xl mx-auto leading-relaxed px-4">
             We invite researchers, academicians, and industry professionals to submit their original research papers for
-            presentation at NCI-TIDE-MSIT 2025.
+            presentation at NCI-TIDE 2025.
           </p>
         </div>
 

@@ -52,7 +52,7 @@ export function Header() {
           <div className="flex items-center space-x-3 sm:space-x-4">
             <div className="flex flex-col">
               <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-blue-900 leading-tight">
-                NCI-TIDE-MSIT 2025
+                NCI-TIDE 2025
               </h1>
               <p className="text-xs sm:text-sm text-blue-600 hidden sm:block">Nov 13-14, 2025 | MSIT, Delhi</p>
             </div>
@@ -84,7 +84,7 @@ export function Header() {
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center space-x-3">
                   <div>
-                    <h2 className="text-lg font-bold text-blue-900">NCI-TIDE-MSIT 2025</h2>
+                    <h2 className="text-lg font-bold text-blue-900">NCI-TIDE 2025</h2>
                     <p className="text-sm text-blue-600">Nov 13-14, 2025</p>
                   </div>
                 </div>

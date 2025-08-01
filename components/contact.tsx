@@ -58,7 +58,7 @@ export function Contact() {
           </Badge>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 sm:mb-6">Get in Touch</h2>
           <p className="text-base sm:text-lg lg:text-xl text-blue-700 max-w-4xl mx-auto leading-relaxed px-4">
-            Have questions about NCI-TIDE-MSIT 2025? We're here to help. Reach out to us for any inquiries.
+            Have questions about NCI-TIDE 2025? We're here to help. Reach out to us for any inquiries.
           </p>
         </div>
 
