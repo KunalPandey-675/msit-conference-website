@@ -140,7 +140,7 @@ export function Registration() {
             Conference Registration
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-blue-700 max-w-4xl mx-auto leading-relaxed px-4">
-            Join us at NCI-TIDE-MSIT 2025 and be part of the premier engineering innovation conference
+            Join us at NCI-TIDE 2025 and be part of the premier engineering innovation conference
           </p>
         </div>
 
