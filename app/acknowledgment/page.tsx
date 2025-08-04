@@ -36,16 +36,7 @@ export default function AcknowledgmentPage() {
                     CMT Acknowledgment
                   </h2>
                   <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                    The peer-review process for this conference was managed using Microsoft CMT (
-                    <a
-                      href="https://cmt3.research.microsoft.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline"
-                    >
-                      https://cmt3.research.microsoft.com
-                    </a>
-                    ). Microsoft provided this service free of charge, covering all cloud, development, and support costs.
+                    The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
                   </p>
                 </div>
               </CardContent>
