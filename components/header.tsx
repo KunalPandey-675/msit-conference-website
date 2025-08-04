@@ -18,24 +18,29 @@ export function Header() {
   }, [])
 
   const navItems = [
-    { name: "Overview", href: "#overview", icon: <FileText className="w-4 h-4" /> },
-    { name: "Call for Papers", href: "#call-for-papers", icon: <FileText className="w-4 h-4" /> },
-    { name: "Important Dates", href: "#important-dates", icon: <Calendar className="w-4 h-4" /> },
-    { name: "Registration", href: "#registration", icon: <Users className="w-4 h-4" /> },
-    { name: "Committees", href: "#committees", icon: <Users className="w-4 h-4" /> },
-    { name: "Sponsors", href: "#sponsors", icon: <Award className="w-4 h-4" /> },
-    { name: "Contact", href: "#contact", icon: <Phone className="w-4 h-4" /> },
+    { name: "Overview", href: "#overview", icon: <FileText className="w-4 h-4" />, external: false },
+    { name: "Call for Papers", href: "#call-for-papers", icon: <FileText className="w-4 h-4" />, external: false },
+    { name: "Important Dates", href: "#important-dates", icon: <Calendar className="w-4 h-4" />, external: false },
+    { name: "Registration", href: "#registration", icon: <Users className="w-4 h-4" />, external: false },
+    { name: "Committees", href: "#committees", icon: <Users className="w-4 h-4" />, external: false },
+    { name: "Sponsors", href: "#sponsors", icon: <Award className="w-4 h-4" />, external: false },
+    { name: "Contact", href: "#contact", icon: <Phone className="w-4 h-4" />, external: false },
+    { name: "Acknowledgments", href: "/acknowledgment", icon: <Award className="w-4 h-4" />, external: true },
   ]
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href)
-    if (element) {
-      const headerHeight = 80
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
-      window.scrollTo({
-        top: elementPosition - headerHeight,
-        behavior: "smooth",
-      })
+  const handleNavigation = (href: string, external: boolean) => {
+    if (external) {
+      window.location.href = href
+    } else {
+      const element = document.querySelector(href)
+      if (element) {
+        const headerHeight = 80
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
+        window.scrollTo({
+          top: elementPosition - headerHeight,
+          behavior: "smooth",
+        })
+      }
     }
     setIsMobileMenuOpen(false)
   }
@@ -65,7 +70,7 @@ export function Header() {
                 key={item.name}
                 variant="ghost"
                 className="text-blue-700 hover:text-blue-900 hover:bg-blue-50 px-3 py-2 text-sm font-medium transition-colors"
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => handleNavigation(item.href, item.external)}
               >
                 {item.name}
               </Button>
@@ -96,7 +101,7 @@ export function Header() {
                     key={item.name}
                     variant="ghost"
                     className="w-full justify-start text-blue-700 hover:text-blue-900 hover:bg-blue-50 px-4 py-3 text-base font-medium"
-                    onClick={() => scrollToSection(item.href)}
+                    onClick={() => handleNavigation(item.href, item.external)}
                   >
                     <span className="mr-3">{item.icon}</span>
                     {item.name}
