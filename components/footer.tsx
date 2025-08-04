@@ -22,6 +22,7 @@ export function Footer() {
     { name: "Accommodation", href: "#", external: true },
     { name: "Travel Information", href: "#", external: true },
     { name: "Visa Information", href: "#", external: true },
+    { name: "Acknowledgments", href: "/acknowledgment", external: false },
   ]
 
   const socialLinks = [
@@ -51,7 +52,7 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-12 sm:py-16 lg:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
             {/* Conference Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-3 mb-4 sm:mb-6">
