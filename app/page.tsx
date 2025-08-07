@@ -10,6 +10,8 @@ import { Committees } from "@/components/committees"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import CMTAcknowledgment  from "../components/CMTAcknowledgment"
+import { ImageGridSection } from "@/components/ImageGridSection"
+
 
 export default function Home() {
   return (
@@ -19,6 +21,7 @@ export default function Home() {
       <Overview />
       <CallForPapers />
       <ConferenceTracks />
+      <ImageGridSection title="Technology in Frames" />
       <ImportantDates />
       <Registration />
       <Sponsors />

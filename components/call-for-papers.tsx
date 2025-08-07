@@ -224,9 +224,12 @@ export function CallForPapers() {
               <p className="mb-4">
                 <span className="font-semibold text-yellow-500">Where to Submit:</span><br />
 
-                <Button className="bg-white text-blue-900 hover:bg-blue-50 px-6 py-5 text-base font-semibold">
+                <Button className="bg-white text-blue-900 hover:bg-blue-50 px-2 py-5 md:w-full w-[320px] text-base font-semibold">
                   <Send className="w-5 mr-2" />
-                  The <span className="text-red-400">CMT submission link</span> will be coming shortly. Stay tuned!
+                  <div className="flex flex-col md:flex-row gap-1">
+                    <div>The <span className="text-red-400">CMT submission link</span> </div>
+                  <div>will be coming shortly. Stay tuned!</div>
+                  </div>
                 </Button>
                 
               </p>
