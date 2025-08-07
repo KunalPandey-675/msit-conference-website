@@ -219,18 +219,6 @@ export function Committees() {
   return (
     <section id="committees" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-white to-blue-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4 sm:mb-6 text-xs sm:text-sm px-3 py-1">
-            Organizing Team
-          </Badge>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 sm:mb-6">
-            Organizing Committee
-          </h2>
-          <p className="text-base sm:text-lg lg:text-xl text-blue-700 max-w-4xl mx-auto leading-relaxed px-4">
-            Meet the dedicated team of faculty and staff members organizing NCI-TIDE 2025
-          </p>
-        </div>
-
         {/* Patrons Section */}
         <div className="mb-12 sm:mb-16 lg:mb-20">
           <h3 className="text-2xl sm:text-3xl font-bold text-blue-900 text-center mb-8 sm:mb-12">
@@ -258,6 +246,19 @@ export function Committees() {
             ))}
           </div>
         </div>
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4 sm:mb-6 text-xs sm:text-sm px-3 py-1">
+            Organizing Team
+          </Badge>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 sm:mb-6">
+            Organizing Committee
+          </h2>
+          <p className="text-base sm:text-lg lg:text-xl text-blue-700 max-w-4xl mx-auto leading-relaxed px-4">
+            Meet the dedicated team of faculty and staff members organizing NCI-TIDE 2025
+          </p>
+        </div>
+
+        
 
         {/* Organizing Chair Section */}
         {OrganizingChair.length > 0 && (
