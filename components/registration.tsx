@@ -140,12 +140,12 @@ export function Registration() {
             Conference Registration
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-blue-700 max-w-4xl mx-auto leading-relaxed px-4">
-            Join us at NCI-TIDE-MSIT 2025 and be part of the premier engineering innovation conference
+            Join us at NCI-TIDE 2025 and be part of the premier engineering innovation conference
           </p>
         </div>
 
         {/* Registration Categories */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16 lg:mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16 lg:mb-20">
           {registrationCategories.map((category, index) => (
             <Card
               key={index}

@@ -107,7 +107,7 @@ export function ImportantDates() {
           </Badge>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 sm:mb-6">Important Dates</h2>
           <p className="text-base sm:text-lg lg:text-xl text-blue-700 max-w-3xl mx-auto leading-relaxed px-4">
-            Mark your calendar with these crucial dates for NCI-TIDE-MSIT 2025
+            Mark your calendar with these crucial dates for NCI-TIDE 2025
           </p>
         </div>
 

@@ -22,9 +22,9 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-48 h-48 sm:w-72 sm:h-72 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-64 h-64 sm:w-96 sm:h-96 bg-purple-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] lg:w-[800px] lg:h-[800px] bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-[6.5rem] sm:pt-20">
@@ -36,13 +36,13 @@ export function Hero() {
 
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-            <span className="block">NCI-TIDE</span>
-            <span className="block text-3xl sm:text-4xl lg:text-6xl text-blue-200">MSIT 2025</span>
+            <span className="block">NCI-TIDE 2025</span>
+            {/* <span className="block text-3xl sm:text-4xl lg:text-6xl text-blue-200">MSIT 2025</span> */}
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl lg:text-2xl text-blue-100 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
-            National Conference on Innovation in Technology and Industrial Development in Engineering
+            National Conference on Integrating Technologies, Ideas and Disciplines for Engineering Innovation (NCI-TIDE 2025)
           </p>
 
           {/* Organizer */}
@@ -113,7 +113,7 @@ export function Hero() {
                 <Award className="w-6 h-6 sm:w-8 sm:h-8" />
               </div>
               <h3 className="text-base sm:text-lg font-semibold mb-2">Publication</h3>
-              <p className="text-sm sm:text-base text-blue-100">IEEE Proceedings</p>
+              {/* <p className="text-sm sm:text-base text-blue-100">IEEE Proceedings</p> */}
             </CardContent>
           </Card>
         </div>

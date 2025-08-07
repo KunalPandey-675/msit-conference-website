@@ -93,12 +93,12 @@ export function ConferenceTracks() {
           </Badge>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 sm:mb-6">Technical Tracks</h2>
           <p className="text-base sm:text-lg lg:text-xl text-blue-700 max-w-4xl mx-auto leading-relaxed px-4">
-            NCI-TIDE-MSIT 2025 covers diverse areas of engineering and technology innovation across multiple specialized
+            NCI-TIDE 2025 covers diverse areas of engineering and technology innovation across multiple specialized
             tracks
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {tracks.map((track, index) => (
             <Card
               key={index}

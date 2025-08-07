@@ -22,6 +22,7 @@ export function Footer() {
     { name: "Accommodation", href: "#", external: true },
     { name: "Travel Information", href: "#", external: true },
     { name: "Visa Information", href: "#", external: true },
+    { name: "Acknowledgments", href: "/acknowledgment", external: false },
   ]
 
   const socialLinks = [
@@ -51,17 +52,17 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-12 sm:py-16 lg:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
             {/* Conference Info */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-3 mb-4 sm:mb-6">
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-bold">NCI-TIDE-MSIT 2025</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold">NCI-TIDE 2025</h3>
                   <p className="text-sm sm:text-base text-blue-200">Nov 13-14, 2025</p>
                 </div>
               </div>
               <p className="text-sm sm:text-base text-blue-100 leading-relaxed mb-4 sm:mb-6">
-                National Conference on Innovation in Technology and Industrial Development in Engineering, organized by
+                National Conference on Integrating Technologies, Ideas and Disciplines for Engineering Innovation (NCI-TIDE 2025), organized by
                 the Department of ECE, MSIT.
               </p>
               <div className="space-y-2 sm:space-y-3">

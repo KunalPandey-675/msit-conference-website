@@ -66,7 +66,7 @@ export function Sponsors() {
           </Badge>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 sm:mb-6">Conference Partners</h2>
           <p className="text-base sm:text-lg lg:text-xl text-blue-700 max-w-4xl mx-auto leading-relaxed px-4">
-            We are grateful to our sponsors and partners who make NCI-TIDE-MSIT 2025 possible. Their support enables us
+            We are grateful to our sponsors and partners who make NCI-TIDE 2025 possible. Their support enables us
             to bring together the best minds in engineering innovation.
           </p>
         </div>
@@ -88,7 +88,7 @@ export function Sponsors() {
                     ? "grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto"
                     : tier.sponsors.length <= 3
                       ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto"
-                      : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
+                      : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
                 }`}
               >
                 {tier.sponsors.map((sponsor, sponsorIndex) => (
@@ -124,7 +124,7 @@ export function Sponsors() {
             </CardHeader>
             <CardContent className="space-y-4 sm:space-y-6">
               <p className="text-sm sm:text-base text-blue-700 leading-relaxed">
-                Partner with NCI-TIDE-MSIT 2025 and showcase your organization to leading researchers, academicians, and
+                Partner with NCI-TIDE 2025 and showcase your organization to leading researchers, academicians, and
                 industry professionals in engineering and technology.
               </p>
               <div className="space-y-2 sm:space-y-3">

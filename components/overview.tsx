@@ -33,7 +33,7 @@ export function Overview() {
     "Technical paper presentations across multiple tracks",
     "Panel discussions on emerging technologies",
     "Networking opportunities with industry leaders",
-    "Publication in IEEE proceedings",
+    // "Publication in IEEE proceedings",
     "Awards for best papers and presentations",
   ]
 
@@ -45,11 +45,10 @@ export function Overview() {
             Conference Overview
           </Badge>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 sm:mb-6">
-            About NCI-TIDE-MSIT 2025
+            About NCI-TIDE 2025
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-blue-700 max-w-4xl mx-auto leading-relaxed px-4">
-            The National Conference on Innovation in Technology and Industrial Development in Engineering (NCI-TIDE-MSIT
-            2025) is a premier platform for researchers, academicians, and industry professionals to showcase their
+            The National Conference on Integrating Technologies, Ideas and Disciplines for Engineering Innovation (NCI-TIDE 2025) is a premier platform for researchers, academicians, and industry professionals to showcase their
             latest innovations and discuss emerging trends in engineering and technology.
           </p>
         </div>
