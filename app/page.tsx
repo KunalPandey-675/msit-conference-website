@@ -11,6 +11,7 @@ import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import CMTAcknowledgment  from "../components/CMTAcknowledgment"
 import { ImageGridSection } from "@/components/ImageGridSection"
+import { PreviousConferences } from "@/components/PreviousConferences"
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <ImportantDates />
       <Registration />
       <Sponsors />
+      <PreviousConferences/>
       <Committees />
       <Contact />
       <CMTAcknowledgment />
