@@ -189,44 +189,50 @@ export function Committees() {
   // Add this data above Committees function
   const advisoryCommittee = [
     {
-      name: "Prof. Prem Vrat",
-      affiliation: "Pro-Chancellor, Professor of Eminence and Chief Mentor, North Cap University",
-      email: "",
-      referredBy: "-"
-    },
-    {
-      name: "Prof. Ved Prakash",
-      affiliation: "Former Chairman, University Grant Commission",
-      email: "",
-      referredBy: ""
-    },
-    {
       name: "Dr. Sanjay Yadav",
       affiliation: "Chief Scientist (Former), National Physical Laboratory",
       email: "",
       referredBy: ""
     },
     {
-      name: "Prof. K.K. Aggarwal",
-      affiliation: "Former Vice Chancellor, GGSIPU, Delhi",
+      name: "Prof. Aarti Singh",
+      affiliation: "Carnegie Mellon University, Pittsburgh, Pennsylvania",
       email: "",
       referredBy: ""
     },
     {
-      name: "Dr. Tejbir Singh Rana",
-      affiliation: "Professor, Shivaji College, University of Delhi",
+      name: "Prof. Deepak Kumar",
+      affiliation: "Professor, IIT Delhi",
       email: "",
       referredBy: ""
     },
     {
-      name: "Prof. Amit Prakash",
-      affiliation: "Professor, GGSIPU",
+      name: "Prof. Bharat Singh Rajpurohit",
+      affiliation: "Professor, IIT Jodhpur",
       email: "",
       referredBy: ""
     },
     {
-      name: "Dr. Darshana Hooda",
-      affiliation: "DCRUST, Haryana",
+      name: "Prof. Rahul Vaish",
+      affiliation: "Professor, IIT Mandi",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Brahmjit Singh",
+      affiliation: "Professor, NIT Kurukshetra",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Alok Prakash Mittal",
+      affiliation: "Emeritus Professor, NSUT",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Ashok De",
+      affiliation: "Professor, DTU",
       email: "",
       referredBy: ""
     },
@@ -237,30 +243,43 @@ export function Committees() {
       referredBy: ""
     },
     {
-      name: "Sumita Singh",
-      affiliation: "Senior Vice President and General Manager, Health, U.S. News & World Report",
+      name: "Prof. Navin Rajpal",
+      affiliation: "Professor, GGSIPU",
       email: "",
       referredBy: ""
     },
     {
-      name: "Dr. Vijender Singh",
-      affiliation: "Professor, Department of Instrumentation and Control Engineering",
+      name: "Prof. Amit Prakash",
+      affiliation: "Professor, GGSIPU",
       email: "",
       referredBy: ""
     },
     {
-      name: "Prof. S.D. Joshi",
-      affiliation: "Department of Electrical Engineering, IIT Delhi",
+      name: "Prof. Vijender Singh",
+      affiliation: "Professor, NSUT",
       email: "",
       referredBy: ""
     },
     {
       name: "Dr. Sushil Chandra",
-      affiliation: "Dean and Professor in the School of Psychology and Education and Former Scientist ‘G’, DRDO",
+      affiliation: "Dean and Professor, School of Psychology and Education and Former Scientist ‘G’, DRDO",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Mr. Suchit Lepcha",
+      affiliation: "System Engineering Manager, NXP Semiconductors",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Mr. Atul Bhargava",
+      affiliation: "Sr. Group Manager, ST Microelectronics",
       email: "",
       referredBy: ""
     }
-  ]
+  ];
+
 
 
   const getColorClasses = (color: string) => {
