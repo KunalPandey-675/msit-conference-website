@@ -122,6 +122,7 @@ export function Committees() {
         "Dr. Sudesh Pahal",
         "Dr. Meena Rao",
         "Dr. Shaifali M. Arora",
+        "Dr. Aman Dahiya",
       ],
     },
     {
