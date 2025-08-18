@@ -59,7 +59,7 @@ export function Hero() {
             <Button
               size="lg"
               className="bg-white text-blue-900 hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold"
-              onClick={() => scrollToSection("#call-for-papers")}
+              onClick={() => window.open("https://cmt3.research.microsoft.com/NCITIDE2025/Submission/Index", "_blank")}
             >
               Submit Paper
               <ArrowRight className="ml-2 w-5 h-5" />

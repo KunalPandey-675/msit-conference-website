@@ -16,7 +16,7 @@ export function Footer() {
   ]
 
   const importantLinks = [
-    { name: "Paper Submission", href: "#", external: true },
+    { name: "Paper Submission", href: "https://cmt3.research.microsoft.com/NCITIDE2025/Submission/Index", external: true },
     { name: "Registration Portal", href: "#", external: true },
     { name: "Conference Proceedings", href: "#", external: true },
     { name: "Accommodation", href: "#", external: true },
