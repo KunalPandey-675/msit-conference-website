@@ -51,12 +51,12 @@
   
   /* Smooth transitions for interactive elements */
   button, .button, [class*="Button"] {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   /* Card hover effects */
   [class*="Card"], .card, [class*="card"] {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 

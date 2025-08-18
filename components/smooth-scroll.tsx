@@ -80,7 +80,7 @@ export function SmoothScrollProvider() {
             opacity: 1,
             y: 0,
             scale: 1,
-            duration: 1.2,
+            duration: 0.95,
             ease: "power3.out",
             scrollTrigger: {
               trigger: section,
@@ -106,9 +106,9 @@ export function SmoothScrollProvider() {
               opacity: 1,
               y: 0,
               scale: 1,
-              duration: 0.8,
+              duration: 0.55,
               ease: "power2.out",
-              stagger: 0.1,
+              stagger: 0.08,
               scrollTrigger: {
                 trigger: section,
                 start: "top 80%",
@@ -131,9 +131,9 @@ export function SmoothScrollProvider() {
             {
               opacity: 1,
               scale: 1,
-              duration: 0.6,
+              duration: 0.35,
               ease: "back.out(1.7)",
-              stagger: 0.1,
+              stagger: 0.08,
               scrollTrigger: {
                 trigger: section,
                 start: "top 75%",
