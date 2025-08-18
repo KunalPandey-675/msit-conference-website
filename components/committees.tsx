@@ -92,14 +92,14 @@ export function Committees() {
       title: "Convener",
       department: "Department of ECE, MSIT",
       image: "/placeholder-user.jpg",
-      email: "neeru.rathee@msit.in",
+      email: "neeru_rathee@msit.in",
     },
     {
       name: "Prof. (Dr.) Pradeep Sangwan",
       title: "Co-Convener",
       department: "Department of ECE, MSIT",
       image: "/placeholder-user.jpg",
-      email: "pradeep.sangwan@msit.in",
+      email: "sangwanpardeep@msit.in",
     },
     {
       name: "Prof. (Dr.) Puneet Azad",
