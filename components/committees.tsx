@@ -187,6 +187,102 @@ export function Committees() {
     },
   ]
 
+  // Add this data above Committees function
+  const advisoryCommittee = [
+    {
+      name: "Dr. Sanjay Yadav",
+      affiliation: "Chief Scientist (Former), National Physical Laboratory",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Aarti Singh",
+      affiliation: "Carnegie Mellon University, Pittsburgh, Pennsylvania",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Deepak Kumar",
+      affiliation: "Professor, IIT Delhi",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Bharat Singh Rajpurohit",
+      affiliation: "Professor, IIT Jodhpur",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Rahul Vaish",
+      affiliation: "Professor, IIT Mandi",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Brahmjit Singh",
+      affiliation: "Professor, NIT Kurukshetra",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Alok Prakash Mittal",
+      affiliation: "Emeritus Professor, NSUT",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Ashok De",
+      affiliation: "Professor, DTU",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Narender Kumar",
+      affiliation: "Professor, DTU",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Navin Rajpal",
+      affiliation: "Professor, GGSIPU",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Amit Prakash",
+      affiliation: "Professor, GGSIPU",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Vijender Singh",
+      affiliation: "Professor, NSUT",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Dr. Sushil Chandra",
+      affiliation: "Dean and Professor, School of Psychology and Education and Former Scientist ‘G’, DRDO",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Mr. Suchit Lepcha",
+      affiliation: "System Engineering Manager, NXP Semiconductors",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Mr. Atul Bhargava",
+      affiliation: "Sr. Group Manager, ST Microelectronics",
+      email: "",
+      referredBy: ""
+    }
+  ];
+
+
+
   const getColorClasses = (color: string) => {
     const colorMap = {
       blue: "bg-blue-100 text-blue-600 border-blue-200",
@@ -349,6 +445,38 @@ export function Committees() {
           ))}
         </div>
 
+        {/* Advisory Committee Section */}
+        <div className="mt-24">
+
+          <h2 className="text-3xl  sm:text-4xl lg:text-5xl text-center font-bold text-blue-900 mb-7 sm:mb-16">
+            Advisory Committee
+          </h2>
+          
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+            {advisoryCommittee.map((member, index) => (
+              <Card
+                key={index}
+                className="bg-white border-blue-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <CardContent className="p-4 sm:p-6 text-center">
+                  <Avatar className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 border-2 border-blue-200">
+                    <AvatarImage src="/placeholder-user.jpg" alt={member.name} />
+                    <AvatarFallback className="text-base sm:text-lg font-bold bg-blue-100 text-blue-600">
+                      {getInitials(member.name)}
+                    </AvatarFallback>
+                  </Avatar>
+                  <h4 className="text-lg sm:text-xl font-bold text-blue-900 mb-1 sm:mb-2">{member.name}</h4>
+                  <p className="text-xs sm:text-sm text-blue-700 mb-1">{member.affiliation}</p>
+                  {member.email && <p className="text-xs sm:text-sm text-blue-600">{member.email}</p>}
+                  {member.referredBy && member.referredBy !== "-" && (
+                    <p className="text-xs sm:text-sm text-gray-500">Referred by: {member.referredBy}</p>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
 
       </div>
     </section>
