@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin, Users, Award, ArrowRight } from "lucide-react"
+import { PublicationBenefits } from "@/components/publication-benefits"
 
 export function Hero() {
   const scrollToSection = (sectionId: string) => {
@@ -55,11 +56,11 @@ export function Hero() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-12 sm:mb-16 max-w-md mx-auto">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-8 sm:mb-10 max-w-md mx-auto">
             <Button
               size="lg"
               className="bg-white text-blue-900 hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 shadow-lg px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg font-semibold"
-              onClick={() => scrollToSection("#call-for-papers")}
+              onClick={() => window.open("https://cmt3.research.microsoft.com/NCITIDE2025/Submission/Index", "_blank")}
             >
               Submit Paper
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -73,6 +74,9 @@ export function Hero() {
               Register Now
             </Button>
           </div>
+
+          {/* Publication Benefits Scrolling Animation */}
+          <PublicationBenefits />
         </div>
 
         {/* Conference Info Cards */}

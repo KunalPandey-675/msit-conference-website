@@ -89,21 +89,21 @@ export function Committees() {
   const leadership = [
     {
       name: "Prof. (Dr.) Neeru Rathee",
-      title: "Convener",
+      title: "Convener & Professor ECE Dept",
       department: "Department of ECE, MSIT",
       image: "/placeholder-user.jpg",
-      email: "neeru.rathee@msit.in",
+      email: "neeru_rathee@msit.in",
     },
     {
       name: "Prof. (Dr.) Pradeep Sangwan",
-      title: "Co-Convener",
+      title: "Co-Convener & Professor ECE Dept",
       department: "Department of ECE, MSIT",
       image: "/placeholder-user.jpg",
-      email: "pradeep.sangwan@msit.in",
+      email: "sangwanpardeep@msit.in",
     },
     {
       name: "Prof. (Dr.) Puneet Azad",
-      title: "Co-Convener",
+      title: "Co-Convener & Professor ECE Dept",
       department: "Department of ECE, MSIT",
       image: "/placeholder-user.jpg",
       email: "puneet.azad@msit.in",
@@ -116,25 +116,26 @@ export function Committees() {
       icon: <FileText className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "blue",
       members: [
-        "Prof. (Dr.) Neeru Rathee",
-        "Prof. (Dr.) Pradeep Sangwan",
-        "Prof. (Dr.) Puneet Azad",
-        "Dr. Sudesh Pahal",
-        "Dr. Meena Rao",
-        "Dr. Shaifali M. Arora",
+        "Prof. (Dr.) Neeru Rathee - Professor, ECE Dept",
+        "Prof. (Dr.) Pradeep Sangwan - Professor, ECE Dept", 
+        "Prof. (Dr.) Puneet Azad - Professor, ECE Dept",
+        "Dr. Sudesh Pahal - Associate Professor, ECE Dept",
+        "Dr. Meena Rao - Associate Professor",
+        "Dr. Shaifali M. Arora - Associate Professor",
+        "Dr. Aman Dahiya - Associate Professor",
       ],
     },
     {
       name: "Finance Committee",
       icon: <DollarSign className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "green",
-      members: ["Dr. Neetu", "Dr. Suman Lata"],
+      members: ["Dr. Neetu - Assistant Professor", "Dr. Suman Lata - Assistant Professor"],
     },
     {
       name: "Publication Committee",
       icon: <BookOpen className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "purple",
-      members: ["Prof. Meena Rao", "Dr. Neha Dhama", "Dr. Sakshi Rajput"],
+      members: ["Prof. Meena Rao - Associate Professor", "Dr. Neha Dhama - Assistant Professor", "Dr. Sakshi Rajput - Assistant Professor"],
     },
     {
       name: "Publicity Committee",
@@ -315,18 +316,6 @@ export function Committees() {
   return (
     <section id="committees" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-white to-blue-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4 sm:mb-6 text-xs sm:text-sm px-3 py-1">
-            Organizing Team
-          </Badge>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 sm:mb-6">
-            Organizing Committee
-          </h2>
-          <p className="text-base sm:text-lg lg:text-xl text-blue-700 max-w-4xl mx-auto leading-relaxed px-4">
-            Meet the dedicated team of faculty and staff members organizing NCI-TIDE 2025
-          </p>
-        </div>
-
         {/* Patrons Section */}
         <div className="mb-12 sm:mb-16 lg:mb-20">
           <h3 className="text-2xl sm:text-3xl font-bold text-blue-900 text-center mb-8 sm:mb-12">
@@ -354,6 +343,18 @@ export function Committees() {
             ))}
           </div>
         </div>
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4 sm:mb-6 text-xs sm:text-sm px-3 py-1">
+            Organizing Team
+          </Badge>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 sm:mb-6">
+            Organizing Committee
+          </h2>
+          <p className="text-base sm:text-lg lg:text-xl text-blue-700 max-w-4xl mx-auto leading-relaxed px-4">
+            Meet the dedicated team of faculty and staff members organizing NCI-TIDE 2025
+          </p>
+        </div>
+
         
 
         {/* Organizing Chair Section */}

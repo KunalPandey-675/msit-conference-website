@@ -224,11 +224,14 @@ export function CallForPapers() {
               <p className="mb-4">
                 <span className="font-semibold text-yellow-500">Where to Submit:</span><br />
 
-                <Button className="bg-white text-blue-900 hover:bg-blue-50 px-2 py-5 md:w-full w-[320px] text-base font-semibold">
+                <Button 
+                  className="bg-white text-blue-900 hover:bg-blue-50 px-2 py-5 md:w-full w-[320px] text-base font-semibold"
+                  onClick={() => window.open("https://cmt3.research.microsoft.com/NCITIDE2025/Submission/Index", "_blank")}
+                >
                   <Send className="w-5 mr-2" />
                   <div className="flex flex-col md:flex-row gap-1">
-                    <div>The <span className="text-red-400">CMT submission link</span> </div>
-                  <div>will be coming shortly. Stay tuned!</div>
+                    <div>Submit Your Paper via</div>
+                    <div><span className="text-red-400">CMT Portal</span></div>
                   </div>
                 </Button>
                 

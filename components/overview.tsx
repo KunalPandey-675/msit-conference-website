@@ -35,6 +35,31 @@ export function Overview() {
     "Networking opportunities with industry leaders",
     // "Publication in IEEE proceedings",
     "Awards for best papers and presentations",
+    <>
+      Top selected papers related to Meteorology will be considered for publication in the{" "}
+      <a
+        href="https://link.springer.com/journal/12647/updates"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline text-blue-700 hover:text-blue-900"
+      >
+        MAPAN Journal
+      </a>
+      , a peer-reviewed and reputed journal published by the Indian National Academy of Engineering (INAE). This opportunity is extended to high-quality submissions that demonstrate originality, scientific rigor, and relevance to current challenges and innovations in Meteorology.
+    </>,
+    <>
+      A few selected papers will be considered for publication in the{" "}
+      <a
+        href="https://pesjournal.net/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline text-blue-700 hover:text-blue-900"
+      >
+        PES Journal
+      </a>
+      , a recognized and Scopus-indexed publication. Submitted papers will undergo a thorough peer-review process to ensure they meet the journal’s academic and quality standards.
+    </>,
+    "This presents an excellent opportunity for researchers to showcase their work in a reputed international journal. We encourage researchers, academicians, and professionals in the field to take advantage of this opportunity to publish in a well-regarded scientific journal."
   ]
 
   return (
