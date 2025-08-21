@@ -27,11 +27,6 @@ export function Committees() {
       image: "/placeholder-user.jpg",
     },
     {
-      name: "Sh. Brahm Pal Singh",
-      title: "Patron, SMES, New Delhi",
-      image: "/placeholder-user.jpg",
-    },
-    {
       name: "Ms. Esha Jakhar",
       title: "Sr. Vice President, SMES, New Delhi",
       image: "/placeholder-user.jpg",
@@ -39,16 +34,6 @@ export function Committees() {
     {
       name: "Sh. Y.P.S. Verma",
       title: "Vice President, SMES, New Delhi",
-      image: "/placeholder-user.jpg",
-    },
-    {
-      name: "Prof. Prem Vrat",
-      title: "Pro-Chancellor, North Cap University, Gurgaon",
-      image: "/placeholder-user.jpg",
-    },
-    {
-      name: "Sh. Karnal Singh",
-      title: "IPS, Former Director - Enforcement Directorate",
       image: "/placeholder-user.jpg",
     },
     {
@@ -62,18 +47,33 @@ export function Committees() {
       image: "/placeholder-user.jpg",
     },
     {
-      name: "Dr. Tejbir Singh Rana",
-      title: "Convener/Member Secretary, SMES, New Delhi",
-      image: "/placeholder-user.jpg",
-    },
-    {
       name: "Sh. S.S. Solanki",
       title: "Joint Secretary, SMES, New Delhi",
       image: "/placeholder-user.jpg",
     },
     {
+      name: "Sh. Brahm Pal Singh",
+      title: "Patron, SMES, New Delhi",
+      image: "/placeholder-user.jpg",
+    },
+    {
       name: "Sh. Shiv Ram Tewatia",
       title: "Joint Secretary, SMES, New Delhi",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Sh. Karnal Singh",
+      title: "IPS, Former Director - Enforcement Directorate",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Prof. Prem Vrat",
+      title: "Pro-Chancellor, North Cap University, Gurgaon",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Dr. Tejbir Singh Rana",
+      title: "Convener/Member Secretary, SMES, New Delhi",
       image: "/placeholder-user.jpg",
     },
   ]
@@ -120,70 +120,70 @@ export function Committees() {
         "Prof. (Dr.) Pradeep Sangwan - Professor, ECE Dept", 
         "Prof. (Dr.) Puneet Azad - Professor, ECE Dept",
         "Dr. Sudesh Pahal - Associate Professor, ECE Dept",
-        "Dr. Meena Rao - Associate Professor",
-        "Dr. Shaifali M. Arora - Associate Professor",
-        "Dr. Aman Dahiya - Associate Professor",
+        "Dr. Meena Rao - Associate Professor, ECE Dept",
+        "Dr. Shaifali M. Arora - Associate Professor, ECE Dept",
+        "Dr. Aman Dahiya - Associate Professor, ECE Dept",
       ],
     },
     {
       name: "Finance Committee",
       icon: <DollarSign className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "green",
-      members: ["Dr. Neetu - Assistant Professor", "Dr. Suman Lata - Assistant Professor"],
+      members: ["Dr. Neetu - Assistant Professor, ECE Dept", "Dr. Suman Lata - Assistant Professor, ECE Dept"],
     },
     {
       name: "Publication Committee",
       icon: <BookOpen className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "purple",
-      members: ["Prof. Meena Rao - Associate Professor", "Dr. Neha Dhama - Assistant Professor", "Dr. Sakshi Rajput - Assistant Professor"],
+      members: ["Prof. Meena Rao - Associate Professor, ECE Dept", "Dr. Neha Dhama - Assistant Professor, ECE Dept", "Dr. Sakshi Rajput - Assistant Professor, ECE Dept"],
     },
     {
       name: "Publicity Committee",
       icon: <Megaphone className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "orange",
-      members: ["Dr. Aman Dahiya", "Dr. Jasmine Chikkara"],
+      members: ["Dr. Aman Dahiya - Associate Professor, ECE Dept", "Ms. Jasmine Chikkara - Assistant Professor, ECE Dept"],
     },
     {
       name: "Design and Printing Committee",
       icon: <Palette className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "pink",
-      members: ["Dr. Sudesh Pahal", "Mr. Deepak Goyal"],
+      members: ["Dr. Sudesh Pahal - Associate Professor, ECE Dept", "Mr. Deepak Goyal - Assistant Professor, ECE Dept"],
     },
     {
       name: "Website Committee",
       icon: <Globe className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "indigo",
-      members: ["Dr. Shaifali M. Arora", "Dr. Upma"],
+      members: ["Dr. Shaifali M. Arora - Associate Professor, ECE Dept", "Dr. Upma Singh - Assistant Professor, ECE Dept"],
     },
     {
       name: "Reception/Registration Committee",
       icon: <UserCheck className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "teal",
-      members: ["Dr. Dinesh Sheoran", "Dr. Anjali Balyan", "Ms. Prinkle Talan", "Dr. Suman Lata"],
+      members: ["Dr. Dinesh Sheoran - Associate Professor, ECE Dept", "Dr. Anjali Balyan - Assistant Professor, ECE Dept", "Ms. Prinkle Talan  - Assistant Professor, ECE Dept", "Dr. Suman Lata - Assistant Professor, ECE Dept"],
     },
     {
       name: "Hospitality Committee",
       icon: <Coffee className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "amber",
-      members: ["Dr. Nishtha", "Dr. Anjali Baliyan", "Ms. Vishakha"],
+      members: ["Dr. Nishtha - Assistant Professor, ECE Dept", "Dr. Anjali Baliyan - Assistant Professor, ECE Dept", "Ms. Vishakha Tomar - Assistant Professor, ECE Dept"],
     },
     {
       name: "Sponsorship Committee",
       icon: <Building className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "emerald",
-      members: ["Dr. Garima", "Dr. Neelam Barak"],
+      members: ["Dr. Garima - Assistant Professor, ECE Dept", "Dr. Neelam Barak - Assistant Professor, ECE Dept"],
     },
     {
       name: "Stage Committee",
       icon: <Stage className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "red",
-      members: ["Dr. Deepti", "Dr. Himani", "Ms. Sonia"],
+      members: ["Dr. Deepti - Assistant Professor, ECE Dept", "Dr. Himani - Assistant Professor, ECE Dept", "Ms. Sonia - Assistant Professor, ECE Dept"],
     },
     {
       name: "Collaboration Committee",
       icon: <Network className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "violet",
-      members: ["Dr. Neelam Nehra", "Dr. Geetanjali Sharma"],
+      members: ["Dr. Neelam Nehra - Assistant Professor, ECE Dept", "Dr. Geetanjali Sharma - Assistant Professor, ECE Dept"],
     },
   ]
 
@@ -428,17 +428,23 @@ export function Committees() {
               </CardHeader>
               <CardContent className="pt-0">
                 <div className="space-y-2 sm:space-y-3">
-                  {committee.members.map((member, memberIndex) => (
-                    <div key={memberIndex} className="flex items-center gap-2 sm:gap-3">
-                      <Avatar className="w-8 h-8 sm:w-10 sm:h-10 border border-gray-200">
-                        <AvatarImage src="/placeholder-user.jpg" alt={member} />
-                        <AvatarFallback className="text-xs sm:text-sm font-medium bg-gray-100 text-gray-600">
-                          {getInitials(member)}
-                        </AvatarFallback>
-                      </Avatar>
-                      <span className="text-sm sm:text-base text-blue-700 font-medium">{member}</span>
-                    </div>
-                  ))}
+                  {committee.members.map((member, memberIndex) => {
+                    const [name, designation] = member.split(' - ');
+                    return (
+                      <div key={memberIndex} className="flex items-start gap-2 sm:gap-3">
+                        <Avatar className="w-8 h-8 sm:w-10 sm:h-10 border border-gray-200 mt-1">
+                          <AvatarImage src="/placeholder-user.jpg" alt={name} />
+                          <AvatarFallback className="text-xs sm:text-sm font-medium bg-gray-100 text-gray-600">
+                            {getInitials(name)}
+                          </AvatarFallback>
+                        </Avatar>
+                        <div className="flex flex-col">
+                          <span className="text-sm sm:text-base text-blue-900 font-semibold">{name}</span>
+                          <span className="text-xs sm:text-sm text-blue-600">{designation}</span>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </CardContent>
             </Card>

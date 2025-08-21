@@ -66,7 +66,17 @@ export function CallForPapers() {
 
   const formattingGuidelines = [
     "Authors must submit original, unpublished work that is not under review elsewhere.",
-    "Papers should be formatted as per the IEEE/ACM Conference template (provide link).",
+    <>
+      Papers should be formatted as per the IEEE/ACM Conference&nbsp;
+      <a
+        href="/conference-template-a4.docx"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-700 underline hover:text-blue-900"
+      >
+        template
+      </a>.
+    </>,
     "Paper Length: 6–8 pages (including references, figures, and tables). Extra pages may incur an additional fee.",
     "All submissions will undergo a double-blind peer-review process.",
     "Submissions must be made through the CMT link: (insert submission link).",
@@ -74,7 +84,17 @@ export function CallForPapers() {
 
   const authorGuidelines = [
     "Manuscripts must be original, unpublished, and not under consideration elsewhere.",
-    "Format your paper as per the official IEEE conference template (2-column format).",
+    <>
+      Format your paper as per the official IEEE conference&nbsp;
+      <a
+        href="/conference-template-a4.docx"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-700 underline hover:text-blue-900"
+      >
+        template
+      </a> (2-column format).
+    </>,
     "Ensure inclusion of abstract, keywords, and properly formatted references.",
     "Submit your paper strictly in PDF format via the submission portal.",
     "All submissions will undergo a double-blind peer-review process.",
@@ -142,7 +162,9 @@ export function CallForPapers() {
               {authorGuidelines.map((point, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <div className="mt-2 w-2.5 h-2.5 bg-blue-500 rounded-full flex-shrink-0"></div>
-                  <p className="text-sm sm:text-base text-blue-800 leading-relaxed">{point}</p>
+                  <p className="text-sm sm:text-base text-blue-800 leading-relaxed">
+                    {point}
+                  </p>
                 </div>
               ))}
             </CardContent>
@@ -165,7 +187,9 @@ export function CallForPapers() {
               {formattingGuidelines.map((point, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <div className="mt-2 w-2.5 h-2.5 bg-blue-500 rounded-full flex-shrink-0"></div>
-                  <p className="text-sm sm:text-base text-blue-800 leading-relaxed">{point}</p>
+                  <p className="text-sm sm:text-base text-blue-800 leading-relaxed">
+                    {point}
+                  </p>
                 </div>
               ))}
             </CardContent>
