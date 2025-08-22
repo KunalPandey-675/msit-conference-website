@@ -27,11 +27,6 @@ export function Committees() {
       image: "/placeholder-user.jpg",
     },
     {
-      name: "Sh. Brahm Pal Singh",
-      title: "Patron, SMES, New Delhi",
-      image: "/placeholder-user.jpg",
-    },
-    {
       name: "Ms. Esha Jakhar",
       title: "Sr. Vice President, SMES, New Delhi",
       image: "/placeholder-user.jpg",
@@ -39,16 +34,6 @@ export function Committees() {
     {
       name: "Sh. Y.P.S. Verma",
       title: "Vice President, SMES, New Delhi",
-      image: "/placeholder-user.jpg",
-    },
-    {
-      name: "Prof. Prem Vrat",
-      title: "Pro-Chancellor, North Cap University, Gurgaon",
-      image: "/placeholder-user.jpg",
-    },
-    {
-      name: "Sh. Karnal Singh",
-      title: "IPS, Former Director - Enforcement Directorate",
       image: "/placeholder-user.jpg",
     },
     {
@@ -62,18 +47,33 @@ export function Committees() {
       image: "/placeholder-user.jpg",
     },
     {
-      name: "Dr. Tejbir Singh Rana",
-      title: "Convener/Member Secretary, SMES, New Delhi",
-      image: "/placeholder-user.jpg",
-    },
-    {
       name: "Sh. S.S. Solanki",
       title: "Joint Secretary, SMES, New Delhi",
       image: "/placeholder-user.jpg",
     },
     {
+      name: "Sh. Brahm Pal Singh",
+      title: "Patron, SMES, New Delhi",
+      image: "/placeholder-user.jpg",
+    },
+    {
       name: "Sh. Shiv Ram Tewatia",
       title: "Joint Secretary, SMES, New Delhi",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Sh. Karnal Singh",
+      title: "IPS, Former Director - Enforcement Directorate",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Prof. Prem Vrat",
+      title: "Pro-Chancellor, North Cap University, Gurgaon",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Dr. Tejbir Singh Rana",
+      title: "Convener/Member Secretary, SMES, New Delhi",
       image: "/placeholder-user.jpg",
     },
   ]
