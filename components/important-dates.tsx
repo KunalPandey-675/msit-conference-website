@@ -1,30 +1,11 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import React from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, CheckCircle, AlertCircle } from "lucide-react"
 
 export function ImportantDates() {
-  const timelineRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-in-up")
-          }
-        })
-      },
-      { threshold: 0.1 },
-    )
-
-    const timelineItems = timelineRef.current?.querySelectorAll(".timeline-item")
-    timelineItems?.forEach((item) => observer.observe(item))
-
-    return () => observer.disconnect()
-  }, [])
 
   const dates = [
     {
@@ -111,7 +92,7 @@ export function ImportantDates() {
           </p>
         </div>
 
-        <div ref={timelineRef} className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="relative">
             {/* Timeline Line */}
             <div className="absolute left-4 sm:left-8 top-0 bottom-0 w-0.5 bg-blue-200"></div>
@@ -120,7 +101,7 @@ export function ImportantDates() {
               {dates.map((item, index) => (
                 <div
                   key={index}
-                  className={`timeline-item opacity-0 transform translate-y-4 transition-all duration-700 delay-${index * 100}`}
+                  className="timeline-item opacity-100 transform translate-y-0 transition-all duration-700"
                 >
                   <div className="flex items-start gap-4 sm:gap-6">
                     {/* Timeline Dot */}
@@ -181,12 +162,7 @@ export function ImportantDates() {
         </div>
       </div>
 
-      <style jsx>{`
-        .animate-fade-in-up {
-          opacity: 1 !important;
-          transform: translateY(0) !important;
-        }
-      `}</style>
+
     </section>
   )
 }
