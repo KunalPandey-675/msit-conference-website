@@ -120,72 +120,193 @@ export function Committees() {
         "Prof. (Dr.) Pradeep Sangwan - Professor, ECE Dept", 
         "Prof. (Dr.) Puneet Azad - Professor, ECE Dept",
         "Dr. Sudesh Pahal - Associate Professor, ECE Dept",
-        "Dr. Meena Rao - Associate Professor",
-        "Dr. Shaifali M. Arora - Associate Professor",
-        "Dr. Aman Dahiya - Associate Professor",
+        "Dr. Meena Rao - Associate Professor, ECE Dept",
+        "Dr. Shaifali M. Arora - Associate Professor, ECE Dept",
+        "Dr. Aman Dahiya - Associate Professor, ECE Dept",
+        "Dr. Deepti",
       ],
     },
     {
       name: "Finance Committee",
       icon: <DollarSign className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "green",
-      members: ["Dr. Neetu - Assistant Professor", "Dr. Suman Lata - Assistant Professor"],
+      members: ["Dr. Neetu - Assistant Professor, ECE Dept", "Dr. Suman Lata - Assistant Professor, ECE Dept"],
     },
     {
       name: "Publication Committee",
       icon: <BookOpen className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "purple",
-      members: ["Prof. Meena Rao - Associate Professor", "Dr. Neha Dhama - Assistant Professor", "Dr. Sakshi Rajput - Assistant Professor"],
+      members: ["Prof. Meena Rao - Associate Professor, ECE Dept", "Dr. Neha Dhama - Assistant Professor, ECE Dept", "Dr. Sakshi Rajput - Assistant Professor, ECE Dept"],
     },
     {
       name: "Publicity Committee",
       icon: <Megaphone className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "orange",
-      members: ["Dr. Aman Dahiya", "Dr. Jasmine Chikkara"],
+      members: ["Dr. Aman Dahiya - Associate Professor, ECE Dept", "Ms. Jasmine Chikkara - Assistant Professor, ECE Dept"],
     },
     {
       name: "Design and Printing Committee",
       icon: <Palette className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "pink",
-      members: ["Dr. Sudesh Pahal", "Mr. Deepak Goyal"],
+      members: ["Dr. Sudesh Pahal - Associate Professor, ECE Dept", "Mr. Deepak Goyal - Assistant Professor, ECE Dept"],
     },
     {
       name: "Website Committee",
       icon: <Globe className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "indigo",
-      members: ["Dr. Shaifali M. Arora", "Dr. Upma"],
+      members: ["Dr. Shaifali M. Arora - Associate Professor, ECE Dept", "Dr. Upma Singh - Assistant Professor, ECE Dept"],
     },
     {
       name: "Reception/Registration Committee",
       icon: <UserCheck className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "teal",
-      members: ["Dr. Dinesh Sheoran", "Dr. Anjali Balyan", "Ms. Prinkle Talan", "Dr. Suman Lata"],
+      members: ["Dr. Dinesh Sheoran - Associate Professor, ECE Dept", "Dr. Anjali Balyan - Assistant Professor, ECE Dept", "Ms. Prinkle Talan  - Assistant Professor, ECE Dept", "Dr. Suman Lata - Assistant Professor, ECE Dept"],
     },
     {
       name: "Hospitality Committee",
       icon: <Coffee className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "amber",
-      members: ["Dr. Nishtha", "Dr. Anjali Baliyan", "Ms. Vishakha"],
+      members: ["Dr. Nishtha - Assistant Professor, ECE Dept", "Dr. Anjali Baliyan - Assistant Professor, ECE Dept", "Ms. Vishakha Tomar - Assistant Professor, ECE Dept"],
     },
     {
       name: "Sponsorship Committee",
       icon: <Building className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "emerald",
-      members: ["Dr. Garima", "Dr. Neelam Barak"],
+      members: ["Dr. Garima - Assistant Professor, ECE Dept", "Dr. Neelam Barak - Assistant Professor, ECE Dept"],
     },
     {
       name: "Stage Committee",
       icon: <Stage className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "red",
-      members: ["Dr. Deepti", "Dr. Himani", "Ms. Sonia"],
+      members: ["Dr. Deepti - Assistant Professor, ECE Dept", "Dr. Himani - Assistant Professor, ECE Dept", "Ms. Sonia - Assistant Professor, ECE Dept"],
     },
     {
       name: "Collaboration Committee",
       icon: <Network className="w-5 h-5 sm:w-6 sm:h-6" />,
       color: "violet",
-      members: ["Dr. Neelam Nehra", "Dr. Geetanjali Sharma"],
+      members: ["Dr. Neelam Nehra - Assistant Professor, ECE Dept", "Dr. Geetanjali Sharma - Assistant Professor, ECE Dept"],
     },
   ]
+
+  // Add this data above Committees function
+  const advisoryCommittee = [
+    {
+      name: "Dr. Sanjay Yadav",
+      affiliation: "Chief Scientist (Former), National Physical Laboratory",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Aarti Singh",
+      affiliation: "Carnegie Mellon University, Pittsburgh, Pennsylvania",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Deepak Kumar",
+      affiliation: "Professor, IIT Delhi",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Bharat Singh Rajpurohit",
+      affiliation: "Professor, IIT Jodhpur",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Rahul Vaish",
+      affiliation: "Professor, IIT Mandi",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Brahmjit Singh",
+      affiliation: "Professor, NIT Kurukshetra",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Alok Prakash Mittal",
+      affiliation: "Emeritus Professor, NSUT",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Ashok De",
+      affiliation: "Professor, DTU",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Narender Kumar",
+      affiliation: "Professor, DTU",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Navin Rajpal",
+      affiliation: "Professor, GGSIPU",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Amit Prakash",
+      affiliation: "Professor, GGSIPU",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. Vijender Singh",
+      affiliation: "Professor, NSUT",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Dr. Sushil Chandra",
+      affiliation: "Dean and Professor, School of Psychology and Education and Former Scientist ‘G’, DRDO",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Mr. Suchit Lepcha",
+      affiliation: "System Engineering Manager, NXP Semiconductors",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Mr. Atul Bhargava",
+      affiliation: "Sr. Group Manager, ST Microelectronics",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. H.S. Rawat",
+      affiliation: "Director T&P, SMES",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Dr. A K Balyan",
+      affiliation: "Former MD & CEO, Petronet LNG Ltd; Former CEO (Oil & Gas), Reliance Group; Former Director BD/HR, ONGC",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. R. K. Nirjhar",
+      affiliation: "Former Chairman of the All India Council for Technical Education (AICTE)",
+      email: "",
+      referredBy: ""
+    },
+    {
+      name: "Prof. K. P. Singh",
+      affiliation: "Former Vice-Chancellor of Mahatma Jyotiba Phule Rohilkhand University (MJPRU), Bareilly, Uttar Pradesh",
+      email: "",
+      referredBy: ""
+    }
+  ];
+
+
 
   const getColorClasses = (color: string) => {
     const colorMap = {
@@ -332,23 +453,61 @@ export function Committees() {
               </CardHeader>
               <CardContent className="pt-0">
                 <div className="space-y-2 sm:space-y-3">
-                  {committee.members.map((member, memberIndex) => (
-                    <div key={memberIndex} className="flex items-center gap-2 sm:gap-3">
-                      <Avatar className="w-8 h-8 sm:w-10 sm:h-10 border border-gray-200">
-                        <AvatarImage src="/placeholder-user.jpg" alt={member} />
-                        <AvatarFallback className="text-xs sm:text-sm font-medium bg-gray-100 text-gray-600">
-                          {getInitials(member)}
-                        </AvatarFallback>
-                      </Avatar>
-                      <span className="text-sm sm:text-base text-blue-700 font-medium">{member}</span>
-                    </div>
-                  ))}
+                  {committee.members.map((member, memberIndex) => {
+                    const [name, designation] = member.split(' - ');
+                    return (
+                      <div key={memberIndex} className="flex items-start gap-2 sm:gap-3">
+                        <Avatar className="w-8 h-8 sm:w-10 sm:h-10 border border-gray-200 mt-1">
+                          <AvatarImage src="/placeholder-user.jpg" alt={name} />
+                          <AvatarFallback className="text-xs sm:text-sm font-medium bg-gray-100 text-gray-600">
+                            {getInitials(name)}
+                          </AvatarFallback>
+                        </Avatar>
+                        <div className="flex flex-col">
+                          <span className="text-sm sm:text-base text-blue-900 font-semibold">{name}</span>
+                          <span className="text-xs sm:text-sm text-blue-600">{designation}</span>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </CardContent>
             </Card>
           ))}
         </div>
 
+        {/* Advisory Committee Section */}
+        <div className="mt-24">
+
+          <h2 className="text-3xl  sm:text-4xl lg:text-5xl text-center font-bold text-blue-900 mb-7 sm:mb-16">
+            Advisory Committee
+          </h2>
+          
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+            {advisoryCommittee.map((member, index) => (
+              <Card
+                key={index}
+                className="bg-white border-blue-200 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <CardContent className="p-4 sm:p-6 text-center">
+                  <Avatar className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4 border-2 border-blue-200">
+                    <AvatarImage src="/placeholder-user.jpg" alt={member.name} />
+                    <AvatarFallback className="text-base sm:text-lg font-bold bg-blue-100 text-blue-600">
+                      {getInitials(member.name)}
+                    </AvatarFallback>
+                  </Avatar>
+                  <h4 className="text-lg sm:text-xl font-bold text-blue-900 mb-1 sm:mb-2">{member.name}</h4>
+                  <p className="text-xs sm:text-sm text-blue-700 mb-1">{member.affiliation}</p>
+                  {member.email && <p className="text-xs sm:text-sm text-blue-600">{member.email}</p>}
+                  {member.referredBy && member.referredBy !== "-" && (
+                    <p className="text-xs sm:text-sm text-gray-500">Referred by: {member.referredBy}</p>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
 
       </div>
     </section>

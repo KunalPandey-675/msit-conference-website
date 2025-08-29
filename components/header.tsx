@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Calendar, MapPin, Users, FileText, Award, Phone } from "lucide-react"
+import { Menu, Calendar, MapPin, Users, FileText, Award, Phone, Mic } from "lucide-react"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -20,6 +20,7 @@ export function Header() {
   const navItems = [
     { name: "Overview", href: "#overview", icon: <FileText className="w-4 h-4" />, external: false },
     { name: "Call for Papers", href: "#call-for-papers", icon: <FileText className="w-4 h-4" />, external: false },
+    { name: "Keynote Speakers", href: "#keynote-speakers", icon: <Mic className="w-4 h-4" />, external: false },
     { name: "Important Dates", href: "#important-dates", icon: <Calendar className="w-4 h-4" />, external: false },
     { name: "Registration", href: "#registration", icon: <Users className="w-4 h-4" />, external: false },
     { name: "Committees", href: "#committees", icon: <Users className="w-4 h-4" />, external: false },

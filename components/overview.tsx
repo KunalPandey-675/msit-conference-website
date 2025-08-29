@@ -35,6 +35,31 @@ export function Overview() {
     "Networking opportunities with industry leaders",
     // "Publication in IEEE proceedings",
     "Awards for best papers and presentations",
+    <>
+      Top selected papers related to Meteorology will be considered for publication in the{" "}
+      <a
+        href="https://link.springer.com/journal/12647/updates"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline text-blue-700 hover:text-blue-900"
+      >
+        MAPAN Journal
+      </a>
+      , a peer-reviewed and reputed journal published by the Indian National Academy of Engineering (INAE). This opportunity is extended to high-quality submissions that demonstrate originality, scientific rigor, and relevance to current challenges and innovations in Meteorology.
+    </>,
+    <>
+      A few selected papers will be considered for publication in the{" "}
+      <a
+        href="https://pesjournal.net/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline text-blue-700 hover:text-blue-900"
+      >
+        PES Journal
+      </a>
+      , a recognized and Scopus-indexed publication. Submitted papers will undergo a thorough peer-review process to ensure they meet the journal’s academic and quality standards.
+    </>,
+    "This presents an excellent opportunity for researchers to showcase their work in a reputed international journal. We encourage researchers, academicians, and professionals in the field to take advantage of this opportunity to publish in a well-regarded scientific journal."
   ]
 
   return (
@@ -51,6 +76,38 @@ export function Overview() {
             The National Conference on Integrating Technologies, Ideas and Disciplines for Engineering Innovation (NCI-TIDE 2025) is a premier platform for researchers, academicians, and industry professionals to showcase their
             latest innovations and discuss emerging trends in engineering and technology.
           </p>
+        </div>
+
+        {/* ECE Department Information */}
+        <div className="mb-12 sm:mb-16 lg:mb-20">
+          <div className="max-w-6xl mx-auto">
+            <Card className="bg-white border-blue-200 shadow-lg">
+              <CardHeader className="text-center pb-4">
+                <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4 text-xs sm:text-sm px-3 py-1 mx-auto w-fit">
+                  Host Department
+                </Badge>
+                <CardTitle className="text-2xl sm:text-3xl font-bold text-blue-900">
+                  Department of Electronics and Communication Engineering
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="px-6 sm:px-8 lg:px-12">
+                <div className="prose prose-blue max-w-none">
+                  <p className="text-base sm:text-lg text-blue-700 leading-relaxed mb-4">
+                    Established in 2001, the Department of Electronics and Communication Engineering is committed to delivering quality education and fostering academic excellence. Since its inception, the department has maintained an outstanding academic record and continues to grow in strength and reputation.
+                  </p>
+                  <p className="text-base sm:text-lg text-blue-700 leading-relaxed mb-4">
+                    We are proud to be accredited by the National Board of Accreditation (NBA) and the National Assessment and Accreditation Council (NAAC). The department is also actively associated with professional bodies such as the Indian Society for Technical Education (ISTE), enhancing our academic and professional environment.
+                  </p>
+                  <p className="text-base sm:text-lg text-blue-700 leading-relaxed mb-4">
+                    A major strength of the department lies in its team of highly qualified and dedicated faculty members, who constantly strive to inspire and mentor students towards academic and professional success. The faculty are actively engaged in research and development, with many pursuing doctoral studies in their respective areas of expertise.
+                  </p>
+                  <p className="text-base sm:text-lg text-blue-700 leading-relaxed">
+                    Our state-of-the-art laboratories, equipped with modern instrumentation, provide students with hands-on experience and practical exposure to complement their theoretical learning. In addition to the academic curriculum, we organize industrial visits, workshops, and technical seminars to bridge the gap between industry and academia.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
 
         {/* Conference Objectives */}
