@@ -19,6 +19,8 @@ export function Header() {
 
   const navItems = [
     { name: "Overview", href: "#overview", icon: <FileText className="w-4 h-4" />, external: false },
+    { name: "MSIT", href: "#host-institute", icon: <FileText className="w-4 h-4" />, external: false },
+    { name: "ECE Department", href: "#host-department", icon: <FileText className="w-4 h-4" />, external: false },
     { name: "Call for Papers", href: "#call-for-papers", icon: <FileText className="w-4 h-4" />, external: false },
     { name: "Keynote Speakers", href: "#keynote-speakers", icon: <Mic className="w-4 h-4" />, external: false },
     { name: "Important Dates", href: "#important-dates", icon: <Calendar className="w-4 h-4" />, external: false },
@@ -49,28 +51,39 @@ export function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-blue-100" : "bg-white/90 backdrop-blur-sm"
-      }`}
+        isScrolled
+          ? "bg-white/95 backdrop-blur-md shadow-lg border-b border-blue-100"
+          : "bg-white/90 backdrop-blur-sm"
+      } rounded-b-xl`}
+      style={{
+        boxShadow: isScrolled
+          ? "0 4px 24px 0 rgba(30, 64, 175, 0.08)"
+          : "0 2px 8px 0 rgba(30, 64, 175, 0.04)",
+        borderBottomLeftRadius: "1rem",
+        borderBottomRightRadius: "1rem",
+      }}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-2 sm:px-4 lg:px-6">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo and Title */}
           <div className="flex items-center space-x-3 sm:space-x-4">
             <div className="flex flex-col">
-              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-blue-900 leading-tight">
+              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-blue-900 leading-tight tracking-tight drop-shadow-sm">
                 NCI-TIDE 2025
               </h1>
-              <p className="text-xs sm:text-sm text-blue-600 hidden sm:block">Nov 13-14, 2025 | MSIT, Delhi</p>
+              <p className="text-xs sm:text-sm text-blue-600 hidden sm:block font-medium">
+                Nov 13-14, 2025 | MSIT, Delhi
+              </p>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-1">
+          <nav className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
               <Button
                 key={item.name}
                 variant="ghost"
-                className="text-blue-700 hover:text-blue-900 hover:bg-blue-50 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-blue-700 hover:text-blue-900 hover:bg-blue-50 px-2 py-1 text-xs font-medium transition-colors rounded"
                 onClick={() => handleNavigation(item.href, item.external)}
               >
                 {item.name}
@@ -101,7 +114,7 @@ export function Header() {
                   <Button
                     key={item.name}
                     variant="ghost"
-                    className="w-full justify-start text-blue-700 hover:text-blue-900 hover:bg-blue-50 px-4 py-3 text-base font-medium"
+                    className="w-full justify-start text-blue-700 hover:text-blue-900 hover:bg-blue-50 px-4 py-3 text-base font-medium rounded-md"
                     onClick={() => handleNavigation(item.href, item.external)}
                   >
                     <span className="mr-3">{item.icon}</span>

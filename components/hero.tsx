@@ -20,7 +20,19 @@ export function Hero() {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 overflow-hidden">
+    <section
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: "url('/images/heroSection.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundColor: "#0f172a", // fallback color (tailwind slate-900)
+      }}
+    >
+      {/* Dark Blue Overlay */}
+      <div className="absolute inset-0 bg-blue-950/60 z-0 pointer-events-none"></div>
+
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-48 h-48 sm:w-72 sm:h-72 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>

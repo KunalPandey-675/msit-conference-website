@@ -33,19 +33,19 @@ export function Contact() {
       name: "Prof. (Dr.) Neeru Rathee",
       title: "Convener",
       // email: "neeru.rathee@msit.in",
-      // phone: "+91-98765-43210",
+      phone: "+91-99117-94078"
     },
     {
       name: "Prof. (Dr.) Pradeep Sangwan",
       title: "Co-Convener",
       // email: "pradeep.sangwan@msit.in",
-      // phone: "+91-98765-43211",
+      phone: "+91-99990-26516"
     },
     {
       name: "Prof. (Dr.) Puneet Azad",
       title: "Co-Convener",
       // email: "puneet.azad@msit.in",
-      // phone: "+91-98765-43212",
+      phone: "+91-98101-07784"
     },
   ]
 
@@ -180,8 +180,8 @@ export function Contact() {
                     {contact.title}
                   </Badge>
                   <div className="space-y-1 sm:space-y-2">
-                    {/* <p className="text-sm sm:text-base text-blue-700">{contact.email}</p>
-                    <p className="text-sm sm:text-base text-blue-700">{contact.phone}</p> */}
+                    {/* <p className="text-sm sm:text-base text-blue-700">{contact.email}</p> */}
+                    <p className="text-sm sm:text-base text-blue-700">{contact.phone}</p>
                   </div>
                 </CardContent>
               </Card>

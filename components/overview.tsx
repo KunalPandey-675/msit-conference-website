@@ -78,8 +78,88 @@ export function Overview() {
           </p>
         </div>
 
+        {/* Host Institute Information */}
+        <div id="host-institute" className="mb-12 sm:mb-16 lg:mb-20">
+          <div className="max-w-6xl mx-auto">
+            <Card className="bg-white border-blue-200 shadow-lg">
+              <CardHeader className="text-center pb-4">
+                <Badge className="bg-blue-100 text-blue-800 border-blue-200 mb-4 text-xs sm:text-sm px-3 py-1 mx-auto w-fit">
+                  Host Institute
+                </Badge>
+                <CardTitle className="text-2xl sm:text-3xl font-bold text-blue-900">
+                  Maharaja Surajmal Institute of Technology (MSIT)
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="px-6 sm:px-8 lg:px-12">
+                <div className="prose prose-blue max-w-none">
+                  <p className="text-base sm:text-lg text-blue-700 leading-relaxed mb-4">
+                    Maharaja Surajmal Institute of Technology (MSIT), located in Janakpuri, New Delhi, is a premier private engineering institution established in 2001. Affiliated with Guru Gobind Singh Indraprastha University (GGSIPU) and approved by the All India Council for Technical Education (AICTE), MSIT has earned a reputation for academic excellence and robust infrastructure.
+                  </p>
+                  <ul className="list-disc pl-6 text-base sm:text-lg text-blue-700 leading-relaxed mb-4">
+                    <li>
+                      <strong>Establishment:</strong> Founded in 2001 under the aegis of the Surajmal Memorial Educational Society (SMES).
+                    </li>
+                    <li>
+                      <strong>Accreditations:</strong>
+                      <ul className="list-disc pl-6">
+                        <li><strong>NAAC:</strong> Accredited with an 'A' grade, valid until September 20, 2027.</li>
+                        <li><strong>NBA:</strong> Departments of Computer Science Engineering (CSE), Information Technology (IT), Electronics and Communication Engineering (ECE), and Electrical and Electronics Engineering (EEE) are accredited.</li>
+                        <li><strong>ISO:</strong> Certified under ISO 9001:2015 standards.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong>Academic Programs:</strong> Offers undergraduate Bachelor of Technology (B.Tech) programs in:
+                      <ul className="list-disc pl-6">
+                        <li>Computer Science and Engineering (CSE)</li>
+                        <li>Information Technology (IT)</li>
+                        <li>Electronics and Communication Engineering (ECE)</li>
+                        <li>Electrical and Electronics Engineering (EEE)</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong>Faculty:</strong> Comprises highly qualified and experienced educators dedicated to providing quality education and fostering research.
+                    </li>
+                    <li>
+                      <strong>Placements:</strong> MSIT boasts a strong placement record, with students recruited by leading companies such as Google, Microsoft, Adobe, Infosys, Accenture, TCS, Amazon, and Samsung.
+                    </li>
+                    <li>
+                      <strong>Location:</strong> Situated approximately 10 kilometers from Indira Gandhi International Airport, the institute is easily accessible and well-connected.
+                    </li>
+                    <li>
+                      <strong>Significant Achievements:</strong>
+                      <ol className="list-decimal pl-6">
+                        <li>‘A’ Grade by Joint Assessment Committee, GGSIPU & Govt. of NCT of Delhi</li>
+                        <li>Ranked 3rd Position in Delhi State in Top 175 Engineering Institutes of India and Ranked 1st in Delhi in Top 125 Private Engineering Colleges by “Times All India Times Engineering Institutes Ranking Survey 2024”.</li>
+                        <li>Ranked 39th position in Top 70 Engineering Institutes and ranked 1st in Delhi State in Placement Category by “Times All India Engineering Institutes Ranking Survey 2024”.</li>
+                        <li>Conferred with “Engineering Education Excellence Award 2021” by the Institute of Engineers (India), 26-28 Dec. 2021</li>
+                        <li>“Outstanding Technical Institution Award” by NITTTR Chandigarh on Sept 07, 2015</li>
+                        <li>Diamond Eye Award for quality commitment and excellence in education from OMAC, Paris in 2015</li>
+                        <li>NIRF India Rankings 2017 and 2018: Engineering (Rank-Band: 151-200), NIRF India Rankings 2020: Engineering (Rank Band: 251-300), NIRF India Rankings 2021: Engineering (Rank Band: 251-300) and NIRF India Rankings 2024: Engineering (Rank Band: 200-300).</li>
+                        <li>Highly Qualified & Experienced Faculty with Good SFR and highest Retention.</li>
+                        <li>Industry Institute Collaboration (MOU): A financial grant of 18.5 lacs for setting up Center of Excellence Lab in AI, ML and IOT has been approved by ONGC. The lab will be used by the faculty and students for Research / Projects in the Institute.</li>
+                        <li>International Collaboration MOU with Wentworth Institute of Technology, Boston, USA. MSIT has successfully organised 2nd International Conference on AI & Applications in association with Wentworth Institute of technology, Boston, USA on 19th and 20th March, 2024. The conference was successful and attended by Researchers, Professor from Boston, USA and UK.</li>
+                      </ol>
+                    </li>
+                  </ul>
+                  <p className="text-base sm:text-lg text-blue-700 leading-relaxed mb-2">
+                    For more detailed information, please visit the official MSIT website:{" "}
+                    <a
+                      href="https://www.msit.in"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline text-blue-700 hover:text-blue-900"
+                    >
+                      www.msit.in
+                    </a>
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
         {/* ECE Department Information */}
-        <div className="mb-12 sm:mb-16 lg:mb-20">
+        <div id="host-department" className="mb-12 sm:mb-16 lg:mb-20">
           <div className="max-w-6xl mx-auto">
             <Card className="bg-white border-blue-200 shadow-lg">
               <CardHeader className="text-center pb-4">

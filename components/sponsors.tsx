@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Building, Star, Award, Users } from "lucide-react"
+import { Mail, Phone } from "lucide-react"
 
 export function Sponsors() {
   const sponsorTiers = [
@@ -139,12 +140,14 @@ export function Sponsors() {
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white flex-1 text-sm sm:text-base py-2 sm:py-3">
                   Sponsor Now
                 </Button>
-                <Button
-                  variant="outline"
-                  className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent flex-1 text-sm sm:text-base py-2 sm:py-3"
+                <a
+                  href="/confbrochure.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent flex-1 text-sm sm:text-base py-2 sm:py-3 rounded-md border transition-colors text-center inline-flex items-center justify-center"
                 >
                   Download Brochure
-                </Button>
+                </a>
               </div>
             </CardContent>
           </Card>
@@ -175,9 +178,55 @@ export function Sponsors() {
                   <p className="text-xs sm:text-sm text-blue-100">Standard branding opportunities</p>
                 </div>
               </div>
-              <Button className="w-full mt-6 sm:mt-8 bg-white text-blue-900 hover:bg-blue-50 text-sm sm:text-base py-2 sm:py-3">
-                Contact for Custom Package
-              </Button>
+              <div className="w-full mt-6 sm:mt-8">
+                <div className="text-lg sm:text-xl font-semibold mb-4">Contact for Custom Package</div>
+                <div className="text-sm sm:text-base space-y-4">
+                  <div>
+                    <div className="font-semibold">Dr. Neelam Barak</div>
+                    <div>Assistant Professor, ECE Dept</div>
+                    <div className="flex items-center gap-2 mt-1">
+                      <Mail className="w-4 h-4 text-blue-100" />
+                      <a
+                        href="mailto:neelam.barak@msit.in"
+                        className="underline text-blue-100 hover:text-blue-200"
+                      >
+                        neelam.barak@msit.in
+                      </a>
+                    </div>
+                    <div className="flex items-center gap-2 mt-1">
+                      <Phone className="w-4 h-4 text-blue-100" />
+                      <a
+                        href="tel:+919319963978"
+                        className="underline text-blue-100 hover:text-blue-200"
+                      >
+                        +91 93199 63978
+                      </a>
+                    </div>
+                  </div>
+                  <div>
+                    <div className="font-semibold">Dr. Garima</div>
+                    <div>Assistant Professor, ECE Dept</div>
+                    <div className="flex items-center gap-2 mt-1">
+                      <Mail className="w-4 h-4 text-blue-100" />
+                      <a
+                        href="mailto:garima@msit.in"
+                        className="underline text-blue-100 hover:text-blue-200"
+                      >
+                        garima@msit.in
+                      </a>
+                    </div>
+                    <div className="flex items-center gap-2 mt-1">
+                      <Phone className="w-4 h-4 text-blue-100" />
+                      <a
+                        href="tel:+919582737935"
+                        className="underline text-blue-100 hover:text-blue-200"
+                      >
+                        +91 95827 37935
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
