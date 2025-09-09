@@ -31,7 +31,7 @@ export function Hero() {
       }}
     >
       {/* Dark Blue Overlay */}
-      <div className="absolute inset-0 bg-blue-950/60 z-0 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-blue-950/20 z-0 pointer-events-none"></div>
 
       {/* Background Elements */}
       <div className="absolute inset-0">
