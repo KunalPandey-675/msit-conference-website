@@ -12,7 +12,7 @@ export function KeynoteSpeakers() {
       title: "Scientist G",
       organization: "Solid State Physics Laboratory (SSPL)",
       affiliation: "DRDO, Delhi",
-      image: "/images/subhash-chander.jpg",
+      image: "/images/directory/subhash-chander.jpg",
       bio: "Distinguished scientist with expertise in solid state physics and advanced materials research.",
       expertise: ["Solid State Physics", "Materials Science", "Defense Research"]
     },
