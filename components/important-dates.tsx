@@ -23,11 +23,12 @@ export function ImportantDates() {
       icon: <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
     {
-      date: "October 7, 2025",
-      event: "Notification of Acceptance",
+      date: "September 30, 2025",
+      event: "Review Process Completion",
       description: "Peer review process completed and results announced",
       status: "upcoming",
       icon: <Clock className="w-5 h-5 sm:w-6 sm:h-6" />,
+      newDate: "October 7, 2025", // Add new date property
     },
     {
       date: "October 15, 2025",
@@ -124,9 +125,21 @@ export function ImportantDates() {
                       <CardContent className="p-4 sm:p-6">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 mb-3 sm:mb-4">
                           <h3 className="text-lg sm:text-xl font-bold text-blue-900">{item.event}</h3>
-                          <Badge className={`${getStatusColor(item.status)} text-xs sm:text-sm px-2 py-1 w-fit`}>
-                            {item.date}
-                          </Badge>
+                          {/* Custom Badge for Review Process Completion */}
+                          {item.event === "Review Process Completion" ? (
+                            <div className="flex flex-col items-start">
+                              <Badge className={`${getStatusColor(item.status)} text-xs sm:text-sm px-2 py-1 w-fit line-through`}>
+                                {item.date}
+                              </Badge>
+                              <Badge className={`${getStatusColor(item.status)} text-xs sm:text-sm px-2 py-1 w-fit mt-1`}>
+                                {item.newDate}
+                              </Badge>
+                            </div>
+                          ) : (
+                            <Badge className={`${getStatusColor(item.status)} text-xs sm:text-sm px-2 py-1 w-fit`}>
+                              {item.date}
+                            </Badge>
+                          )}
                         </div>
                         <p className="text-sm sm:text-base text-blue-700 leading-relaxed">{item.description}</p>
                       </CardContent>
