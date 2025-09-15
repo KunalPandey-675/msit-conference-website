@@ -33,19 +33,19 @@ export function Contact() {
       name: "Prof. (Dr.) Neeru Rathee",
       title: "Convener",
       // email: "neeru.rathee@msit.in",
-      phone: "+91-99117-94078"
+      phone: "+919911794078"
     },
     {
       name: "Prof. (Dr.) Pradeep Sangwan",
       title: "Co-Convener",
       // email: "pradeep.sangwan@msit.in",
-      phone: "+91-99990-26516"
+      phone: "+91 99990 26516"
     },
     {
       name: "Prof. (Dr.) Puneet Azad",
       title: "Co-Convener",
       // email: "puneet.azad@msit.in",
-      phone: "+91-98101-07784"
+      phone: "+91 98101 07784"
     },
   ]
 
