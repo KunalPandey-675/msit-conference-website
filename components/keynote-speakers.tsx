@@ -21,7 +21,7 @@ export function KeynoteSpeakers() {
       title: "Director",
       organization: "West Campus, NSUT",
       affiliation: "Netaji Subhas University of Technology",
-      image: "/placeholder-user.jpg",
+      image: "/images/directory/prerna-gaur.jpg",
       bio: "Accomplished academic leader with extensive experience in engineering education and research.",
       expertise: ["Engineering Education", "Academic Leadership", "Research Management"]
     },
