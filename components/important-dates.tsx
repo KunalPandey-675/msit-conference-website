@@ -23,8 +23,8 @@ export function ImportantDates() {
       icon: <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
     {
-      date: "September 30, 2025",
-      event: "Review Process Completion",
+      date: "October 7, 2025",
+      event: "Notification of Acceptance",
       description: "Peer review process completed and results announced",
       status: "upcoming",
       icon: <Clock className="w-5 h-5 sm:w-6 sm:h-6" />,

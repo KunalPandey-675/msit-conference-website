@@ -20,8 +20,9 @@ export function Header() {
   const navItems = [
     { name: "Overview", href: "#overview", icon: <FileText className="w-4 h-4" />, external: false },
     { name: "MSIT", href: "#host-institute", icon: <FileText className="w-4 h-4" />, external: false },
-    { name: "ECE Department", href: "#host-department", icon: <FileText className="w-4 h-4" />, external: false },
+    // { name: "ECE Department", href: "#host-department", icon: <FileText className="w-4 h-4" />, external: false },
     { name: "Call for Papers", href: "#call-for-papers", icon: <FileText className="w-4 h-4" />, external: false },
+    { name: "Special Sessions", href: "#special-sessions", icon: <Mic className="w-4 h-4" />, external: false },
     { name: "Keynote Speakers", href: "#keynote-speakers", icon: <Mic className="w-4 h-4" />, external: false },
     { name: "Important Dates", href: "#important-dates", icon: <Calendar className="w-4 h-4" />, external: false },
     { name: "Registration", href: "#registration", icon: <Users className="w-4 h-4" />, external: false },

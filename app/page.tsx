@@ -13,6 +13,7 @@ import { Footer } from "@/components/footer"
 import CMTAcknowledgment  from "../components/CMTAcknowledgment"
 import { ImageGridSection } from "@/components/ImageGridSection"
 import { PreviousConferences } from "@/components/PreviousConferences"
+import { SpecialSessions } from "@/components/special-sessions"
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <Hero />
       <Overview />
       <CallForPapers />
+      <SpecialSessions />
       <ConferenceTracks />
       <KeynoteSpeakers />
       <ImageGridSection title="Technology in Frames" />
