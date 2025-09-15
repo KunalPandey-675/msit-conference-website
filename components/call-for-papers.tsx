@@ -293,8 +293,9 @@ export function CallForPapers() {
               <h4 className="font-semibold text-base sm:text-lg mb-2">Important Dates</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sm:text-base">
                 <div>
-                  <span className="font-medium">Paper Submission Deadline:</span><br />
-                  <span className="text-blue-100">October 1, 2025</span>
+                  <span className="font-medium">Paper Submission Deadline (Extended):</span><br />
+                  <span className="text-blue-100">October 1, 2025</span><br />
+                  <span className="text-xs text-blue-200">(Originally September 15, 2025)</span>
                 </div>
                 <div>
                   <span className="font-medium">Notification of Acceptance:</span><br />
