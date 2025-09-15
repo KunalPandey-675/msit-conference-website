@@ -18,7 +18,7 @@ export function Contact() {
     {
       icon: <Phone className="w-5 h-5 sm:w-6 sm:h-6" />,
       title: "Phone",
-      details: ["+91-011-45037193", "+91-011-45037193"],
+      details: ["011-45037193", "011-45037193"],
     },
     // {
     //   icon: <Mail className="w-5 h-5 sm:w-6 sm:h-6" />,
