@@ -30,7 +30,7 @@ export function KeynoteSpeakers() {
       title: "Professor",
       organization: "NIT Kurukshetra",
       affiliation: "National Institute of Technology",
-      image: "/placeholder-user.jpg",
+      image: "/images/directory/brahmjit-singh.jpg",
       bio: "Renowned professor with significant contributions to engineering research and education.",
       expertise: ["Engineering Research", "Technical Education", "Innovation"]
     }
