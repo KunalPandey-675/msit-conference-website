@@ -289,7 +289,7 @@ export function CallForPapers() {
               </a>
             </div>
 
-            <div className="mt-8 p-4 bg-white/10 rounded-lg max-w-2xl mx-auto">
+            {/* <div className="mt-8 p-4 bg-white/10 rounded-lg max-w-2xl mx-auto">
               <h4 className="font-semibold text-base sm:text-lg mb-2">Important Dates</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm sm:text-base">
                 <div>
@@ -302,7 +302,7 @@ export function CallForPapers() {
                   <span className="text-blue-100">September 30, 2025</span>
                 </div>
               </div>
-            </div>
+            </div> */}
           </CardContent>
         </Card>
 
