@@ -16,7 +16,7 @@ export function ImportantDates() {
       icon: <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
     {
-      date: "October 1, 2025",
+      date: "September 30, 2025",
       event: "Paper Submission Deadline (Extended)",
       description: "Extended deadline for submitting full papers (Originally September 15, 2025)",
       status: "upcoming",
