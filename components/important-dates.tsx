@@ -15,11 +15,12 @@ export function ImportantDates() {
       icon: <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
     {
-      date: "October 15, 2025",
+      date: "September 30, 2025",
       event: "Paper Submission Deadline",
       description: "Final deadline for submitting full papers",
       status: "upcoming",
       icon: <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
+      newDate: "October 15, 2025",
     },
     {
       date: "October 7, 2025",
@@ -31,10 +32,11 @@ export function ImportantDates() {
     },
     {
       date: "October 15, 2025",
-      event: "Camera Ready Submission",
+      event: "Camera Ready Submission (extended)",
       description: "Final version of accepted papers due",
       status: "upcoming",
       icon: <Calendar className="w-5 h-5 sm:w-6 sm:h-6" />,
+      newDate: "October 25, 2025",
     },
     {
       date: "October 25, 2025",
@@ -107,10 +109,10 @@ export function ImportantDates() {
                     {/* Timeline Dot */}
                     <div
                       className={`relative z-10 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center ${item.status === "completed"
-                          ? "bg-green-500 text-white"
-                          : item.status === "conference"
-                            ? "bg-purple-500 text-white"
-                            : "bg-blue-500 text-white"
+                        ? "bg-green-500 text-white"
+                        : item.status === "conference"
+                          ? "bg-purple-500 text-white"
+                          : "bg-blue-500 text-white"
                         } shadow-lg`}
                     >
                       {item.icon}
@@ -123,14 +125,14 @@ export function ImportantDates() {
                       <CardContent className="p-4 sm:p-6">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 mb-3 sm:mb-4">
                           <h3 className="text-lg sm:text-xl font-bold text-blue-900">{item.event}</h3>
-                          {/* Custom Badge for Review Process Completion */}
-                          {item.event === "Review Process Completion" ? (
+                          {/* Show strikethrough for any date with newDate */}
+                          {item.newDate ? (
                             <div className="flex flex-col items-start">
                               <Badge className={`${getStatusColor(item.status)} text-xs sm:text-sm px-2 py-1 w-fit line-through`}>
                                 {item.date}
                               </Badge>
                               <Badge className={`${getStatusColor(item.status)} text-xs sm:text-sm px-2 py-1 w-fit mt-1`}>
-                                {item.newDate ? item.newDate : ""}
+                                {item.newDate}
                               </Badge>
                             </div>
                           ) : (
