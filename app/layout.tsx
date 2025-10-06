@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title:
     "NCI-TIDE 2025 | National Conference on Integrating Technologies, Ideas and Disciplines for Engineering Innovation (NCI-TIDE 2025)",
   description:
-    "Join us for NCI-TIDE 2025, a premier National Conference on Integrating Technologies, Ideas and Disciplines for Engineering Innovation (NCI-TIDE 2025), organized by the Department of Electronics and Communication Engineering, MSIT on November 13-14, 2025.",
+    "Join us for NCI-TIDE 2025, a premier National Conference on Integrating Technologies, Ideas and Disciplines for Engineering Innovation (NCI-TIDE 2025), organized by the Department of Electronics and Communication Engineering, MSIT on November 18-19, 2025.",
   keywords:
     "NCI-TIDE, MSIT, conference, engineering, technology, innovation, industrial development, electronics, communication",
   authors: [{ name: "MSIT ECE Department" }],

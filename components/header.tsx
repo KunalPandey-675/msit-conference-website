@@ -73,7 +73,7 @@ export function Header() {
                 NCI-TIDE 2025
               </h1>
               <p className="text-xs sm:text-sm text-blue-600 hidden sm:block font-medium">
-                Nov 13-14, 2025 | MSIT, Delhi
+                Nov 18-19, 2025 | MSIT, Delhi
               </p>
             </div>
           </div>
@@ -105,7 +105,7 @@ export function Header() {
                 <div className="flex items-center space-x-3">
                   <div>
                     <h2 className="text-lg font-bold text-blue-900">NCI-TIDE 2025</h2>
-                    <p className="text-sm text-blue-600">Nov 13-14, 2025</p>
+                    <p className="text-sm text-blue-600">Nov 18-19, 2025</p>
                   </div>
                 </div>
               </div>
@@ -129,7 +129,7 @@ export function Header() {
                 <div className="space-y-2 text-sm text-blue-700">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>November 13-14, 2025</span>
+                    <span>November 18-19, 2025</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
