@@ -51,6 +51,7 @@ export function ImportantDates() {
       description: "Main conference event at MSIT, Delhi",
       status: "conference",
       icon: <Calendar className="w-5 h-5 sm:w-6 sm:h-6" />,
+      newDate: "November 18-19, 2025",
     },
   ];
 
@@ -167,7 +168,8 @@ export function ImportantDates() {
                 </div>
                 <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm sm:col-span-2 lg:col-span-1">
                   <h4 className="font-semibold text-base sm:text-lg mb-2">Conference Dates</h4>
-                  <p className="text-sm sm:text-base text-blue-100">November 13-14, 2025</p>
+                  <p className="text-sm sm:text-base text-blue-100 line-through">November 13-14, 2025</p>
+                  <p className="text-sm sm:text-base text-blue-100 mt-1">November 18-19, 2025</p>
                 </div>
               </div>
             </CardContent>
