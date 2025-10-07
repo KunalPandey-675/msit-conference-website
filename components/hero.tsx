@@ -99,7 +99,8 @@ export function Hero() {
                 <Calendar className="w-6 h-6 sm:w-8 sm:h-8" />
               </div>
               <h3 className="text-base sm:text-lg font-semibold mb-2">Conference Dates</h3>
-              <p className="text-sm sm:text-base text-blue-100">November 18-19, 2025</p>
+              <p className="text-sm sm:text-base text-blue-100 line-through">November 13-14, 2025</p>
+              <p className="text-sm sm:text-base text-blue-100 mt-1">November 18-19, 2025</p>
             </CardContent>
           </Card>
 
