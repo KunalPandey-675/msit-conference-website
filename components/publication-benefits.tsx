@@ -29,7 +29,7 @@ export function PublicationBenefits() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % benefits.length)
-    }, 4000) // Change every 4 seconds
+    }, 4000) 
 
     return () => clearInterval(interval)
   }, [benefits.length])
