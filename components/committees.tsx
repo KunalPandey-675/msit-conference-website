@@ -117,7 +117,7 @@ export function Committees() {
       color: "blue",
       members: [
         "Prof. (Dr.) Neeru Rathee - Professor, ECE Dept",
-        "Prof. (Dr.) Pradeep Sangwan - Professor, ECE Dept", 
+        "Prof. (Dr.) Pradeep Sangwan - Professor, ECE Dept",
         "Prof. (Dr.) Puneet Azad - Professor, ECE Dept",
         "Dr. Sudesh Pahal - Associate Professor, ECE Dept",
         "Dr. Meena Rao - Associate Professor, ECE Dept",
@@ -293,14 +293,24 @@ export function Committees() {
       referredBy: ""
     },
     {
-      name: "Prof. R. K. Nirjhar",
+      name: "Prof. R. S. Nirjhar",
       affiliation: "Former Chairman of the All India Council for Technical Education (AICTE)",
       email: "",
       referredBy: ""
     },
     {
       name: "Prof. K. P. Singh",
+      affiliation: "Former Chief Scientist NPL",
+      email: "",
+      referredBy: ""
+    }, {
+      name: "K. P. Chaudhary Sir",
       affiliation: "Former Vice-Chancellor of Mahatma Jyotiba Phule Rohilkhand University (MJPRU), Bareilly, Uttar Pradesh",
+      email: "",
+      referredBy: ""
+    }, {
+      name: "Dr N.K.Gupta",
+      affiliation: "National Executive Council Member, ISTE, New Delhi",
       email: "",
       referredBy: ""
     }
@@ -380,7 +390,7 @@ export function Committees() {
           </p>
         </div>
 
-        
+
 
         {/* Organizing Chair Section */}
         {OrganizingChair.length > 0 && (
@@ -482,8 +492,8 @@ export function Committees() {
           <h2 className="text-3xl  sm:text-4xl lg:text-5xl text-center font-bold text-blue-900 mb-7 sm:mb-16">
             Advisory Committee
           </h2>
-          
-          
+
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
             {advisoryCommittee.map((member, index) => (
               <Card
