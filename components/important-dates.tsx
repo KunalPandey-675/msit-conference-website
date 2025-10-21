@@ -15,31 +15,31 @@ export function ImportantDates() {
       icon: <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
     {
-      date: "September 30, 2025",
+      date: "October 15, 2025",
       event: "Paper Submission Deadline",
       description: "Final deadline for submitting full papers",
       status: "upcoming",
       icon: <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
-      newDate: "October 15, 2025",
+      newDate: "October 25, 2025",
     },
     {
-      date: "October 7, 2025",
+      date: "October 22, 2025",
       event: "Review Process Completion",
       description: "Peer review process completed and results announced",
       status: "upcoming",
       icon: <Clock className="w-5 h-5 sm:w-6 sm:h-6" />,
-      newDate: "October 22, 2025",
+      newDate: "October 31, 2025",
     },
     {
-      date: "October 15, 2025",
+      date: "October 25, 2025",
       event: "Camera Ready Submission (extended)",
       description: "Final version of accepted papers due",
       status: "upcoming",
       icon: <Calendar className="w-5 h-5 sm:w-6 sm:h-6" />,
-      newDate: "October 25, 2025",
+      newDate: "November 5, 2025",
     },
     {
-      date: "October 25, 2025",
+      date: "November 10, 2025",
       event: "Final Registration Deadline",
       description: "Last date for conference registration",
       status: "upcoming",
@@ -164,7 +164,8 @@ export function ImportantDates() {
                 </div>
                 <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
                   <h4 className="font-semibold text-base sm:text-lg mb-2">Early Bird Registration Deadline</h4>
-                  <p className="text-sm sm:text-base text-blue-100">October 6, 2025</p>
+                  <p className="text-sm sm:text-base text-blue-100 line-through">October 6, 2025</p>
+                  <p className="text-sm sm:text-base text-blue-100 mt-1">November 5, 2025</p>
                 </div>
                 <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm sm:col-span-2 lg:col-span-1">
                   <h4 className="font-semibold text-base sm:text-lg mb-2">Conference Dates</h4>

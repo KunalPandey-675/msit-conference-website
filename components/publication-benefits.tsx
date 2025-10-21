@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react"
 import { Badge } from "@/components/ui/badge"
-import { Award, BookOpen } from "lucide-react"
+import { Award, BookOpen,Newspaper } from "lucide-react"
 
 export function PublicationBenefits() {
   const [currentIndex, setCurrentIndex] = useState(0)
-  
+
   const benefits = [
     {
       icon: <Award className="w-5 h-5" />,
@@ -17,13 +17,19 @@ export function PublicationBenefits() {
       icon: <BookOpen className="w-5 h-5" />,
       text: "A few selected papers will be considered for publication in the PES Journal, a recognized and Scopus-indexed publication",
       highlight: "PES Journal"
+    },
+    {
+      icon: <Newspaper className="w-5 h-5" />,
+      text: "The selected quality papers will be published as Satyam Journal Special Issue.",
+      highlight: "Satyam Journal Special Issue"
     }
+
   ]
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % benefits.length)
-    }, 4000) // Change every 4 seconds
+    }, 4000) 
 
     return () => clearInterval(interval)
   }, [benefits.length])
@@ -36,15 +42,15 @@ export function PublicationBenefits() {
             Publication Opportunities
           </Badge>
         </div>
-        
+
         <div className="relative h-16 sm:h-12 flex items-center justify-center">
-          <div 
+          <div
             className="flex transition-transform duration-700 ease-in-out w-full"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             {benefits.map((benefit, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="w-full flex-shrink-0 flex items-center justify-center text-center px-4"
               >
                 <div className="flex items-start gap-3 max-w-3xl">
@@ -75,11 +81,10 @@ export function PublicationBenefits() {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentIndex 
-                  ? "bg-yellow-300 w-6" 
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex
+                  ? "bg-yellow-300 w-6"
                   : "bg-white/30 hover:bg-white/50"
-              }`}
+                }`}
             />
           ))}
         </div>
