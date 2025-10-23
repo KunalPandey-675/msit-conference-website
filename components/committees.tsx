@@ -300,12 +300,14 @@ export function Committees() {
     },
     {
       name: "Prof. K. P. Singh",
-      affiliation: "Former Chief Scientist NPL",
+      affiliation: "Former Vice-Chancellor of Mahatma Jyotiba Phule Rohilkhand University (MJPRU), Bareilly, Uttar Pradesh",
+
       email: "",
       referredBy: ""
     }, {
       name: "K. P. Chaudhary Sir",
-      affiliation: "Former Vice-Chancellor of Mahatma Jyotiba Phule Rohilkhand University (MJPRU), Bareilly, Uttar Pradesh",
+      affiliation: "Former Chief Scientist NPL",
+      
       email: "",
       referredBy: ""
     }, {
