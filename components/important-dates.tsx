@@ -165,7 +165,7 @@ export function ImportantDates() {
                 <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm">
                   <h4 className="font-semibold text-base sm:text-lg mb-2">Early Bird Registration Deadline</h4>
                   <p className="text-sm sm:text-base text-blue-100 line-through">October 6, 2025</p>
-                  <p className="text-sm sm:text-base text-blue-100 mt-1">November 5, 2025</p>
+              <p className="text-sm sm:text-base text-blue-100 mt-1">November 10, 2025</p>
                 </div>
                 <div className="bg-white/10 rounded-lg p-3 sm:p-4 backdrop-blur-sm sm:col-span-2 lg:col-span-1">
                   <h4 className="font-semibold text-base sm:text-lg mb-2">Conference Dates</h4>
