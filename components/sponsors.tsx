@@ -12,6 +12,7 @@ export function Sponsors() {
     { name: "Mikronix Associate", logo: "/images/sponsors/sponsorMA.jpg" },
     { name: "Elegancespark Innovations", logo: "/images/sponsors/sponsorEI.jpg" },
     { name: "DRDO", logo: "/images/sponsors/sponsorDRDO.jpg" },
+    { name: "Empower Panchayat", logo: "/images/sponsors/sponsorEP.png" },
   ];
 
   const sponsorshipBenefits = [
