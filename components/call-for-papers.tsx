@@ -77,6 +77,31 @@ export function CallForPapers() {
         template
       </a>.
     </>,
+    <>
+      <span >Sample IEEE paper a4 size, NCITIDE Copyright transfer form:</span>
+      <ul className="list-disc ml-6 mt-2">
+        <li>
+          <a
+            href="/ieee-format.doc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 underline hover:text-blue-900"
+          >
+            IEEE Format Sample (DOC)
+          </a>
+        </li>
+        <li>
+          <a
+            href="/NCI-TIDE_2025_Copyright_Form.docx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 underline hover:text-blue-900"
+          >
+            NCITIDE Copyright Transfer Form (DOCX)
+          </a>
+        </li>
+      </ul>
+    </>,
     "Paper Length: 6–8 pages (including references, figures, and tables). Extra pages may incur an additional fee.",
     "All submissions will undergo a double-blind peer-review process.",
     "Submissions must be made through the CMT link: (insert submission link).",
