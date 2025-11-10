@@ -58,7 +58,7 @@ export function Footer() {
               <div className="flex items-center gap-3 mb-4 sm:mb-6">
                 <div>
                   <h3 className="text-xl sm:text-2xl font-bold">NCI-TIDE 2025</h3>
-                  <p className="text-sm sm:text-base text-blue-200">Nov 13-14, 2025</p>
+                  <p className="text-sm sm:text-base text-blue-200">Nov 18-19, 2025</p>
                 </div>
               </div>
               <p className="text-sm sm:text-base text-blue-100 leading-relaxed mb-4 sm:mb-6">
