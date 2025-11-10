@@ -28,7 +28,7 @@ export function ImportantDates() {
       description: "Peer review process completed and results announced",
       status: "upcoming",
       icon: <Clock className="w-5 h-5 sm:w-6 sm:h-6" />,
-      newDate: "October 31, 2025",
+      newDate: "November 12, 2025",
     },
     {
       date: "November 12, 2025",
