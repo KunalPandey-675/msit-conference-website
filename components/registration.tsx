@@ -162,7 +162,7 @@ export function Registration() {
               <CardContent className="pt-0 flex flex-col h-full">
                 <div className="text-center mb-4 sm:mb-6">
                   <div className="mb-2 sm:mb-3">
-                    <span className="text-xs sm:text-sm text-blue-600 font-medium">Early Bird (Till Oct 6)</span>
+                    <span className="text-xs sm:text-sm text-blue-600 font-medium">Early Bird (Till Nov 10)</span>
                     <div className="text-2xl sm:text-3xl font-bold text-blue-900">{category.earlyBird}</div>
                   </div>
                   <div>
