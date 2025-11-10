@@ -271,9 +271,17 @@ export function Registration() {
           </Card> */}
         </div>
 
-        {/* Contact for Registration */}
-        <div className="mt-12 sm:mt-16 lg:mt-20">
-          
+        {/* Registration Form Button */}
+        <div className="mt-12 sm:mt-16 lg:mt-20 flex justify-center">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScY3VPrzuOxDUH6ax2Qo2TtzxSMwlatBjAsdfava607D1ITdg/viewform?usp=sharing&ouid=101557748162641364846"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white text-lg px-8 py-3 rounded-lg shadow-lg">
+              Fill Registration Form
+            </Button>
+          </a>
         </div>
       </div>
     </section>

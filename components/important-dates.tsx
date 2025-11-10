@@ -1,5 +1,4 @@
 "use client"
-
 import React from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -16,18 +15,20 @@ export function ImportantDates() {
       icon: <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
     {
-      date: "October 1, 2025",
-      event: "Paper Submission Deadline (Extended)",
-      description: "Extended deadline for submitting full papers (Originally September 15, 2025)",
+      date: "October 25, 2025",
+      event: "Paper Submission Deadline",
+      description: "Final deadline for submitting full papers",
       status: "upcoming",
       icon: <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
+      newDate: "October 31, 2025",
     },
     {
-      date: "September 30, 2025",
+      date: "October 22, 2025",
       event: "Review Process Completion",
       description: "Peer review process completed and results announced",
       status: "upcoming",
       icon: <Clock className="w-5 h-5 sm:w-6 sm:h-6" />,
+      newDate: "October 31, 2025",
     },
     {
       date: "November 12, 2025",
@@ -36,7 +37,6 @@ export function ImportantDates() {
       status: "upcoming",
       icon: <Calendar className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
-    
     {
       date: "November 12, 2025",
       event: "Final Registration Deadline",
@@ -45,13 +45,14 @@ export function ImportantDates() {
       icon: <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
     {
-              date: "November 18-19, 2025",
+      date: "November 18-19, 2025",
       event: "Conference Days",
       description: "Main conference event at MSIT, Delhi",
       status: "conference",
       icon: <Calendar className="w-5 h-5 sm:w-6 sm:h-6" />,
     },
-  ]
+  ];
+
 
   const getStatusColor = (status: string) => {
     switch (status) {
@@ -106,13 +107,12 @@ export function ImportantDates() {
                   <div className="flex items-start gap-4 sm:gap-6">
                     {/* Timeline Dot */}
                     <div
-                      className={`relative z-10 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center ${
-                        item.status === "completed"
-                          ? "bg-green-500 text-white"
-                          : item.status === "conference"
-                            ? "bg-purple-500 text-white"
-                            : "bg-blue-500 text-white"
-                      } shadow-lg`}
+                      className={`relative z-10 w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center ${item.status === "completed"
+                        ? "bg-green-500 text-white"
+                        : item.status === "conference"
+                          ? "bg-purple-500 text-white"
+                          : "bg-blue-500 text-white"
+                        } shadow-lg`}
                     >
                       {item.icon}
                     </div>
@@ -124,9 +124,21 @@ export function ImportantDates() {
                       <CardContent className="p-4 sm:p-6">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 mb-3 sm:mb-4">
                           <h3 className="text-lg sm:text-xl font-bold text-blue-900">{item.event}</h3>
-                          <Badge className={`${getStatusColor(item.status)} text-xs sm:text-sm px-2 py-1 w-fit`}>
-                            {item.date}
-                          </Badge>
+                          {/* Show strikethrough for any date with newDate */}
+                          {item.newDate ? (
+                            <div className="flex flex-col items-start">
+                              <Badge className={`${getStatusColor(item.status)} text-xs sm:text-sm px-2 py-1 w-fit line-through`}>
+                                {item.date}
+                              </Badge>
+                              <Badge className={`${getStatusColor(item.status)} text-xs sm:text-sm px-2 py-1 w-fit mt-1`}>
+                                {item.newDate}
+                              </Badge>
+                            </div>
+                          ) : (
+                            <Badge className={`${getStatusColor(item.status)} text-xs sm:text-sm px-2 py-1 w-fit`}>
+                              {item.date}
+                            </Badge>
+                          )}
                         </div>
                         <p className="text-sm sm:text-base text-blue-700 leading-relaxed">{item.description}</p>
                       </CardContent>

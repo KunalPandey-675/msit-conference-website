@@ -9,6 +9,7 @@ export function Footer() {
   const quickLinks = [
     { name: "About Conference", href: "#overview" },
     { name: "Call for Papers", href: "#call-for-papers" },
+    { name: "Special Sessions", href: "#special-sessions" },
     { name: "Registration", href: "#registration" },
     { name: "Important Dates", href: "#important-dates" },
     { name: "Conference Tracks", href: "#conference-tracks" },
